@@ -1,0 +1,29 @@
+{
+  "name": "kisapp",
+  "version": "1.0.0",
+  "description": "With the help of health educators and programmers alike, we built a tool to help young people have information to make healthy decisions. K.I.S is a platform to encourage curiosity, learning, and health with an inclusive and easy-to-navigate environment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrandSuccess87/KisApp.git"
+  },
+  "keywords": [
+    "node.js",
+    "express.js",
+    "mongodb",
+    "mongoose",
+    "mongooseORM",
+    "React.js",
+    "Heroku",
+    "MVC"
+  ],
+  "author": "Quintessa, Erica, Ozzy, Sarah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GrandSuccess87/KisApp/issues"
+  },
+  "homepage": "https://github.com/GrandSuccess87/KisApp#readme"
+}
