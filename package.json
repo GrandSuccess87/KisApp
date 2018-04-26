@@ -2,9 +2,15 @@
   "name": "kisapp",
   "version": "1.0.0",
   "description": "With the help of health educators and programmers alike, we built a tool to help young people have information to make healthy decisions. K.I.S is a platform to encourage curiosity, learning, and health with an inclusive and easy-to-navigate environment.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "seed": "node scripts/seedDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installDeps": "yarn && cd client && yarn"
   },
   "repository": {
     "type": "git",
@@ -25,5 +31,15 @@
   "bugs": {
     "url": "https://github.com/GrandSuccess87/KisApp/issues"
   },
-  "homepage": "https://github.com/GrandSuccess87/KisApp#readme"
+  "homepage": "https://github.com/GrandSuccess87/KisApp#readme",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^5.0.11"
+  }
 }
