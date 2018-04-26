@@ -1,4 +1,4 @@
 module.exports = {
-    UserResults: require("./questions")
+    Question: require("./question")
   };
   
