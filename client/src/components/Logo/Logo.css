@@ -1,0 +1,82 @@
+#submitButton {
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .5px;
+    font-size: 15px;
+    border:0;
+    border-radius: 0;
+    color: white;
+    background-color: #ED645F;
+    border-radius: 2px;
+
+}
+
+#submitButton:hover {
+    background-color:#5EB9DA;
+    color: white;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #3B3C40;
+    text-align: center;
+}
+
+#questionBox {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    /* background-color: #D3D1D3; */
+}
+
+#contentDiv {
+    margin-left:10%;
+    margin-right: 10%;
+    text-align: center;
+    padding: 0;
+}
+
+.logo {
+    width: 140px;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+
+.topRule {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ED645F;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.blackRule {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #3B3C40;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.bottomRule {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #5EB9DA;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.button-href {
+    color:white;
+}
+a:hover{
+    color: white;
+}
+
+.form-box{
+    text-align: center;
+}
