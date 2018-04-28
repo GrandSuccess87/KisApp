@@ -40,6 +40,7 @@
     "axios": "^0.16.2",
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
+    "fast-csv": "^2.4.1",
     "mongoose": "^5.0.11"
   }
 }
