@@ -1,13 +1,10 @@
 import React, {Component} from 'react';
-import Logo from "../../components/Logo";
 import Nav from "../../components/Nav";
 import Wrapper from "../../components/Wrapper"
+import Logo from "../../components/Logo"
 
-class Home extends Component {
-    state = {
-        questions: [],
-        userInput: ""
-    };
+
+class About extends Component {
 
 
     render() {
@@ -16,7 +13,7 @@ class Home extends Component {
             <Nav />
             <Wrapper>
             <Logo />
-            <h1>There is nothing built on this route yet. Be Patient</h1>
+            <h1>Theres nothing on this About page! Be Patient!</h1>
             </Wrapper>
            </div>
         );
@@ -24,4 +21,4 @@ class Home extends Component {
 }
 
 
-export default Home;
+export default About;
