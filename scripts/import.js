@@ -27,6 +27,7 @@ db.open(function(err, db){
                 index.addObjects(batch);
                 batch = [];
             }
+            console.log('Indexed: ' + batch.length);
         });
 
             // send the last batch
