@@ -12,11 +12,12 @@ class Home extends Component {
         questions: []
     };
 
+
     render() {
         return(
-            <h1>
-              <h1>QUESTION SEARCH BAR</h1>
-            </h1>
+           <div>
+            <Nav />
+           </div>
         );
     }
 }
