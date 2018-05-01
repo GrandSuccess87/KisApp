@@ -1,8 +1,13 @@
 require("dotenv").config();
-const Db = require('mongodb').Db;
-Server = require('mongodb').Server;
+// var Db = require('mongodb').Db,
+    // MongoClient = require('mongodb').MongoClient,
+    // Server = require('mongodb').Server;
+
+var mongoose = require('mongoose');
+var db = mongoose.connection; 
+mongoose.connect('mongodb://localhost/KisAppDatabase');
+
 const keys = require('./keys.js');
-// const algolia = require('algolia');
 const algoliasearch = require('algoliasearch');
 
 var client = algoliasearch(keys.algoliaAppID, keys.alogoliaAdminKey);
@@ -10,13 +15,23 @@ var client = algoliasearch(keys.algoliaAppID, keys.alogoliaAdminKey);
 var index = client.initIndex('dev_questions');
 
 //init connection to MongoDB
-var db = new Db('mydb', new Server('localhost', 27017));
-db.open(function(err, db){
-    //get the data in the collection
-    db.collection('myCollection', function(err, collection){
-        if(err) throw err;
-        console.log('Got the Collection Successfully' + collection)
+// var db = new Db('KisAppDatabase', new Server('mongodb://localhost/KisAppDatabase', 27017));
+console.log('New Server Working');
+db.once('open', function(err, db){
 
+    console.log('Connected to "KisAppDatabase"');
+    //get the data in the collection
+    const collectionName = 'questions';
+    const collection = db.collection(collectionName);
+    console.log('db.Collection throwing error: ' + db.collection);
+        db.collection('questions', {strict: true}, function(err, collection){
+        if(err) 
+        {
+            console.log('The "questions" collection does not exist. Unable to locate collection.' + err + 'Has Occurred')
+        } else {  
+
+            console.log('Connected to "questions" collection Successfully');
+        }
         //iterate over the whole collectioin using a cursor
         var batch = [];
         collection.find().forEach(function(doc){
@@ -34,8 +49,9 @@ db.open(function(err, db){
             if (batch.length > 0) {
                 index.addObjects(batch);
             }
-
             console.log('Last Batch: ' + batch.length);
-            
+        
+        db.on('close', test.done.bind('mydb'));
+        db.close()    
     });
 });
