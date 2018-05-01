@@ -9,7 +9,8 @@ import API from "../../utils/API";
 
 class Home extends Component {
     state = {
-        questions: []
+        questions: [],
+        userInput: ""
     };
 
 
