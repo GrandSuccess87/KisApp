@@ -2,7 +2,7 @@ require("dotenv").config();
 const Db = require('mongodb').Db;
 Server = require('mongodb').Server;
 const keys = require('./keys.js');
-const algolia = require('algolia');
+// const algolia = require('algolia');
 const algoliasearch = require('algoliasearch');
 
 var client = algoliasearch(keys.algoliaAppID, keys.alogoliaAdminKey);
