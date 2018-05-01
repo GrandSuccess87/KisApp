@@ -17,9 +17,14 @@ class Home extends Component {
         return(
            <div>
             <Nav />
+            <Wrapper>
+            <Logo />
+
+            </Wrapper>
            </div>
         );
     }
 }
+
 
 export default Home;
