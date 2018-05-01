@@ -18,9 +18,9 @@ const Nav = props => (
           </li>
           <li className="nav-item">
             <a className="nav-link" href="about.html">ABOUT</a>
-            <li className="nav-item">
-              <a className="nav-link" href="resources.html">RESOURCES</a>
-            </li>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="resources.html">RESOURCES</a>
           </li>
         </ul>
       </div>
