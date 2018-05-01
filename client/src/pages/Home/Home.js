@@ -17,6 +17,8 @@ class Home extends Component {
         return(
            <div>
             <Nav />
+            <Logo />
+            
            </div>
         );
     }
