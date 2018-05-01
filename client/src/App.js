@@ -9,10 +9,10 @@ import Search from "./components/Search";
 
 const App = () => (
   <div>
-    <Nav />
-    <Logo />
+
+
     <Home />
-    <Question />
+
 
 
   </div>
