@@ -21,10 +21,10 @@ db.once('open', function(err, db){
 
     console.log('Connected to "KisAppDatabase"');
     //get the data in the collection
-    const collectionName = 'questions';
+    const collectionName = 'question';
     // const collection = db.question(collectionName);
-    console.log('db.Collection throwing error: ' + db.questions);
-        db.questions('questions', {strict: true}, function(err, collection){
+    // console.log('db.question throwing error: ' + db.question);
+        db.question('question', {strict: true}, function(err, find){
         if(err) 
         {
             console.log('The "questions" collection does not exist. Unable to locate collection.' + err + 'Has Occurred')
