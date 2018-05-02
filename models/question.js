@@ -9,6 +9,6 @@ const questionSchema = new Schema({
   objectID: { type: Number, required: true}
 });
 
-const question = mongoose.model("question", questionSchema);
+const Question = mongoose.model("Question", questionSchema);
 
-module.exports = question;
+module.exports = Question;
