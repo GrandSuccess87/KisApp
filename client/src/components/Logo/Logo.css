@@ -1,20 +1,4 @@
-#submitButton {
-    margin-top: 15px;
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: .5px;
-    font-size: 17px;
-    border:0;
-    border-radius: 0;
-    color: white;
-    background-color: #ED645F;
-    border-radius: 2px;
 
-}
-
-#submitButton:hover {
-    background-color:#5EB9DA;
-    color: white;
-}
 
 h2 {
     font-family: 'Raleway', sans-serif;

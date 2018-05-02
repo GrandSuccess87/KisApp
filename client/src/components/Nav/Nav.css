@@ -1,11 +1,11 @@
 .nav-link {
-    color: #9D9EA1;
+    /* color: #9D9EA1; */
 }
 
  .nav-item {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    float: left;
+    float: right;
 }
 
 .nav-link:hover {
@@ -16,6 +16,13 @@
     color: #5EB9DA;
 }
 
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #ED645F;
+}
+
+.navbar-light .navbar-nav .nav-link {
+        color: #ED645F;
+}
 
 .navbar-brand {
     font-family: 'Raleway', sans-serif;
@@ -23,9 +30,9 @@
     font-size:45px;
 }
 
-/* .navbar-brand:hover {
-    color: #ED645F;
-} */
+.navbar-brand:hover {
+    color: #ED645F !important;
+}
 
 .hamburger {
 background-color: grey;
