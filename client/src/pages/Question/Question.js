@@ -3,6 +3,7 @@ import Logo from "../../components/Logo";
 import Nav from "../../components/Nav";
 import Wrapper from "../../components/Wrapper"
 
+
 class Home extends Component {
     state = {
         questions: [],

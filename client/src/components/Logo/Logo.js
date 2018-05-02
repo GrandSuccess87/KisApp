@@ -1,5 +1,6 @@
 import React from "react";
 import "./Logo.css";
+import "./animate.min.css"
 import Logoimg from "./kis.png"
 
 

@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"
+import "./UserQuestion.css"
 
 
 const UserQuestion = props => (
@@ -9,7 +10,7 @@ const UserQuestion = props => (
             <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
             <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <button type="submit" className="btn btn-primary" id="submitButton">SUBMIT</button>
         </form>
         </div>
     )

@@ -6,6 +6,7 @@ import Wrapper from "../../components/Wrapper";
 import API from "../../utils/API";
 import Form from "../../components/Form";
 
+
 class Home extends Component {
     state = {
         questions: [],
@@ -20,6 +21,7 @@ class Home extends Component {
             <Wrapper>
             <Logo />
             <Form />
+            <UserResults />
             </Wrapper>
            </div>
         );

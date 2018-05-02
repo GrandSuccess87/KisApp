@@ -2,25 +2,23 @@ import React from "react";
 import "./Nav.css";
 
 const Nav = props => (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="/">KIS</a>
-      
-        <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-        <span className="sr-only">Toggle navigation</span>
-        <span className="icon-bar hamburger" ></span>
-        <span className="icon-bar hamburger"></span>
-        <span className="icon-bar hamburger"></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="nav navbar-nav navbar-right">
-          <li className="nav-item">
-            <a className="nav-link" href="about">ABOUT</a>
+      <a class="navbar-brand" href="#">KIS</a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="navbar-right ">
+            <a class="nav-link" href="#">ABOUT <span class="sr-only">(current)</span></a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="resources">RESOURCES</a>
+          <li class="nav-item navbar-right">
+            <a class="nav-link" href="#">RESOURCES</a>
           </li>
         </ul>
+
       </div>
     </nav>
 );
