@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import Nav from "../../components/Nav";
 import Wrapper from "../../components/Wrapper"
 import Logo from "../../components/Logo"
+import AboutComp from "../../components/AboutComp"
+
 
 
 
@@ -15,7 +17,7 @@ class About extends Component {
             <Nav />
             <Wrapper>
             <Logo />
-            <h1>Theres nothing on this About page! Be Patient!</h1>
+            <AboutComp />
             </Wrapper>
            </div>
         );
