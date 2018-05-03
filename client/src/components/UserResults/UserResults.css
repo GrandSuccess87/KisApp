@@ -4,4 +4,13 @@
     border-radius: 4px;
     margin-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
+    border-color: white;
+}
+
+.card-body {
+    background-color: #5EB9DA;
+}
+
+.btn {
+    color: white;
 }

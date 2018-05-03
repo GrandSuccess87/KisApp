@@ -33,10 +33,12 @@ class Form extends Component {
   render() {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
+        <div className="row justify-content-md-center">
+            <div className="col-md-auto">
       <div>
         <p>
-          
-          Your Quesrtion is: {this.state.userQuestion}
+
+          Your Question is: {this.state.userQuestion}
         </p>
         <form>
         <div className="form-group">
@@ -48,9 +50,11 @@ class Form extends Component {
             type="text"
             placeholder="Type your question here"
           />
-          <button className="btn btn-primary mt-3" onClick={this.handleFormSubmit}>Submit</button>
+          <button className="btn btn-primary mt-3" onClick={this.handleFormSubmit}>SUBMIT</button>
         </div>
         </form>
+      </div>
+      </div>
       </div>
     );
   }
