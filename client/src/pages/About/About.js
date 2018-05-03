@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Nav from "../../components/Nav";
 import Wrapper from "../../components/Wrapper"
 import Logo from "../../components/Logo"
-import AboutComp from "../../components/AboutComp"
+import AboutComp from "../../components/About"
 
 
 
