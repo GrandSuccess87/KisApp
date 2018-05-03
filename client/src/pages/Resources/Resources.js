@@ -6,14 +6,13 @@ import Logo from "../../components/Logo"
 
 class Resources extends Component {
 
-
     render() {
         return(
            <div>
             <Nav />
             <Wrapper>
             <Logo />
-            <h1>Theres nothing on this page! Be Patient!</h1>
+            <Resources />
             </Wrapper>
            </div>
         );

@@ -1,0 +1,51 @@
+.topRule {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ED645F;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.blackRule {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #3B3C40;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.bottomRule {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #5EB9DA;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.aboutText, .resource-link {
+    color: #9D9EA1;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 15px;
+
+}
+.resourceLink:hover {
+    color: #ED645F;
+}
+
+.resource-link {
+    color:#5EB9DA;
+}
+
+.resource-link:hover {
+    color:#ED645F;
+}
+
+
+.resourceText {
+    color:#3B3C40;
+}

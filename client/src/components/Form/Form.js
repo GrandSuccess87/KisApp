@@ -48,7 +48,7 @@ class Form extends Component {
             name="userQuestion"
             onChange={this.handleInputChange}
             type="text"
-            placeholder="Type your question here"
+            placeholder="ask here!"
           />
           <button className="btn btn-primary mt-3" onClick={this.handleFormSubmit}>SUBMIT</button>
         </div>
