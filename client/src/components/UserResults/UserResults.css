@@ -5,10 +5,14 @@
     margin-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
     border-color: white;
+
 }
 
 .card-body {
-    background-color: #5EB9DA;
+    background-color: #5EB9DA !important;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .25px;
+
 }
 
 .btn {

@@ -13,18 +13,17 @@
     margin-top: 15px;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: .5px;
-    font-size: 15px;
+    font-size: 19px;
     border:0;
-    border-radius: 0;
+    border-radius: 2;
     color: white;
-    background-color: #ED645F ;
+    background-color: #ED645F !important ;
     border-radius: 2px;
     border-color: white;
-
 }
 
 .btn-primary:hover {
-    background-color:#5EB9DA ;
+    background-color:#5EB9DA !important ;
     color: white;
     border-color: white;
 
