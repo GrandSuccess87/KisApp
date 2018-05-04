@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const db = require("../models");
 const algoliasearch = require('algoliasearch');
 
-var client = algoliasearch('QVNOD82220', '758f01b94805f53bec084e460796f7a6');
+var client = algoliasearch('YZR8H8JEYA', '8b1f7ac15d2dec622d1c39583ad47142');
 var index = client.initIndex('questions');
 var questionsJSON = require('./questions.json');
 
