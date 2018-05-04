@@ -1,21 +1,46 @@
-h3 {
-    color: #3B3C40;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size:34px;
-}
-
-.card-text {
-font-family: 'Open Sans', sans-serif;
-letter-spacing: .25px;
-}
-
 .card-img-top {
     float:left;
-    width: 100px;
+    width: 130px;
     margin-bottom: 20px;
     margin-right: 20px;
     border-radius: 3px;
     vertical-align: center;
     margin-top: 0;
+}
+
+.card-title {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #3B3C40;
+}
+
+.card-body {
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: .25px;
+    border-radius: 4px;
+    background-color: #9D9EA1;
+    height: 200px;
+
+}
+
+p {
+    color: white;
+}
+
+.aboutText {
+    color: #3B3C40;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .25px;
+    margin-bottom: 23px;
+    }
+
+
+h3 {
+    color: #3B3C40;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size:34px;
 }

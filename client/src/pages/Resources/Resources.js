@@ -4,6 +4,7 @@ import Wrapper from "../../components/Wrapper"
 import Logo from "../../components/Logo"
 
 
+
 class Resources extends Component {
 
     render() {

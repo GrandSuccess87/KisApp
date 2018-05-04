@@ -10,7 +10,6 @@ import AboutComp from "../../components/About"
 
 class About extends Component {
 
-
     render() {
         return(
            <div>
