@@ -11,7 +11,10 @@ app.use(bodyParser.json());
 // Serve up static assets
 app.use(express.static("client/build"));
 // Add routes, both API and view
-app.use(routes);
+// app.use(routes);
+
+// API Routes
+app.use("/", require('./scripts/import.js'));
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/KisAppDatabase");
