@@ -3,20 +3,33 @@ const mongoose = require('mongoose');
 //const keys = require('./keys.js');
 const db = require("../models");
 const algoliasearch = require('algoliasearch');
+const router = require('express').Router();
 
 var client = algoliasearch('YZR8H8JEYA', '8b1f7ac15d2dec622d1c39583ad47142');
 var index = client.initIndex('questions');
 var questionsJSON = require('./questions.json');
 
+router.get('api/questions', function(req, res){
 index.addObjects(questionsJSON, function(err, content) {
   if (err) {
     console.error(err);
   }
 });
 
-index.search('What is sex', function(err, content) {
+// const searchQuestion = req.query.userQuestion;
+
+index.search(req.query.userQuestion, function(err, content, res) {
     console.log(content.hits);
+    res.json(content.hits);
 });
+
+});
+
+module.exports = router;
+
+//create back end route that will reference this file 
+//inside server.js create the back end route i.e. api.get('...')
+//inside form component make sure the front end route matches the backend route
 
 
 // //init connection to MongoDB

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import UserResults from "../../components/UserResults";
 
 class Form extends Component {
   // Setting the component's initial state
@@ -43,6 +44,7 @@ class Form extends Component {
         <form>
         <div className="form-group">
         <input
+            id="search-input"
             className="form-control "
             value={this.state.userQuestion}
             name="userQuestion"
@@ -53,6 +55,7 @@ class Form extends Component {
           <button className="btn btn-primary mt-3" onClick={this.handleFormSubmit}>SUBMIT</button>
         </div>
         </form>
+        <UserResults userQues={this.state.userQuestion}/>
       </div>
       </div>
       </div>
