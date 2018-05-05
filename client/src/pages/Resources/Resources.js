@@ -2,10 +2,11 @@ import React, {Component} from 'react';
 import Nav from "../../components/Nav";
 import Wrapper from "../../components/Wrapper"
 import Logo from "../../components/Logo"
+import InfoLinks from "../../components/InfoLinks"
 
 
 
-class Resources extends Component {
+class ResourcesPage extends Component {
 
     render() {
         return(
@@ -13,7 +14,7 @@ class Resources extends Component {
             <Nav />
             <Wrapper>
             <Logo />
-            <Resources />
+            <InfoLinks />
             </Wrapper>
            </div>
         );
@@ -21,4 +22,4 @@ class Resources extends Component {
 }
 
 
-export default Resources;
+export default ResourcesPage;
