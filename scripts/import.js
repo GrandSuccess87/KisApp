@@ -14,7 +14,7 @@ index.addObjects(questionsJSON, function(err, content) {
   }
 });
 
-index.search('consent', function(err, content) {
+index.search('What is sex', function(err, content) {
     console.log(content.hits);
 });
 
