@@ -24,7 +24,6 @@ router.post('/api/questions', function (req, res) {
     res.json(content.hits);
     //
   });
-
 });
 
 module.exports = router;
