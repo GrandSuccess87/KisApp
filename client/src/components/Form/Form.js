@@ -33,7 +33,7 @@ class Form extends Component {
   };
 
   getResults = () => {
-    axios.get("/api/questions",{
+    axios.post("/api/questions",{
       userQuestion: this.state.userQuestion
     }).then(res => {
       this.setState({
