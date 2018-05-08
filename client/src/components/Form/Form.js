@@ -9,6 +9,10 @@ class Form extends Component {
   searchResults: []
   };
 
+  componentDidUpdate(){
+    console.log(this.state);
+  }
+
   handleInputChange = event => {
     // Getting the value and name of the input which triggered the change
     let value = event.target.value;
@@ -33,11 +37,20 @@ class Form extends Component {
       userQuestion: this.state.userQuestion
     }).then(res => {
       this.setState({
-        searchResults: res
+        searchResults: res.data
       })
     })
     .catch(err => console.log(err));
   };
+
+  clearSearchState = event => {
+    event.preventDefault();
+    this.setState({
+      searchResults: []
+    })
+  }
+
+ 
 
 
   render() {
@@ -62,6 +75,8 @@ class Form extends Component {
             placeholder="ask here!"
           />
           <button className="btn btn-primary mt-3" onClick={this.handleFormSubmit}>SUBMIT</button>
+
+          <button className="btn btn-primary mt-3" onClick={this.clearSearchState}>Clear SearchState</button>
         </div>
         </form>
         <UserResults userQues={this.state.userQuestion}/>

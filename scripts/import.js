@@ -20,7 +20,7 @@ router.get('/api/questions', function (req, res) {
 
   index.search(req.query.userQuestion, function (err, content) {
     if (err) throw err;
-    // console.log(content.hits);
+    // console.log(content.hits);node
     res.json(content.hits);
     //
   });
