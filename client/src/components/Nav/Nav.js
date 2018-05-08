@@ -8,15 +8,15 @@ const Nav = props => (
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="/">KIS</a>
+      <a className="navbar-brand" href="/">KIS</a>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="navbar-right ">
-            <a class="nav-link" href="/about">ABOUT <span class="sr-only">(current)</span></a>
+      <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li className="navbar-right ">
+            <a className="nav-link" href="/about">ABOUT <span className="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item navbar-right">
-            <a class="nav-link" href="/resources">RESOURCES</a>
+          <li className="nav-item navbar-right">
+            <a className="nav-link" href="/resources">RESOURCES</a>
           </li>
         </ul>
 
