@@ -14,9 +14,12 @@ index.addObjects(questionsJSON, function(err, content) {
   }
 });
 
-index.search('consent', function(err, content) {
+function search(question) {
+  index.search(question, function(err, content) {
     console.log(content.hits);
-});
+  });
+};
+
 
 
 // //init connection to MongoDB
@@ -746,3 +749,5 @@ index.search('consent', function(err, content) {
 // db.close()    
 // //});
 // // });
+
+export default search;
