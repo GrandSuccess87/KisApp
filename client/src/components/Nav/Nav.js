@@ -1,6 +1,5 @@
 import React from "react";
 import "./Nav.css";
-import {Link} from "react-router-dom";
 
 const Nav = props => (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
