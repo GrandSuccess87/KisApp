@@ -6,7 +6,6 @@ exports.algoliaKeys = {
   ADMIN_API_KEY: process.env.ADMIN_API_KEY,
   ACCESS_TOKEN_KEY: process.env.ACCESS_TOKEN_KEY,
   MONITORING_API_KEY: process.env.MONITORING_API_KEY
-
 },
 
 exports.alogoliaAdminKey = {
@@ -14,6 +13,5 @@ exports.alogoliaAdminKey = {
 },
 
 exports.algoliaAppID = {
-    APPLICATION_ID: process.env.APPLICATION_ID
-    
+    APPLICATION_ID: process.env.APPLICATION_ID   
 };

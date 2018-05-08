@@ -50,40 +50,32 @@ class Form extends Component {
     })
   }
 
-
-
-
   render() {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
-        <div className="row justify-content-md-center">
-            <div className="col-md-auto">
-      <div>
-        <p>
-
-          Your Question is: {this.state.userQuestion}
-        </p>
-        <form>
-        <div className="form-group">
-        <input
-            id="search-input"
-            className="form-control "
-            value={this.state.userQuestion}
-            name="userQuestion"
-            onChange={this.handleInputChange}
-            type="text"
-            placeholder="ask here!"
-          />
-          <button className="btn btn-primary mt-3" onClick={this.handleFormSubmit}>SUBMIT</button>
-
-          <button className="btn btn-primary mt-3" onClick={this.clearSearchState}>Clear SearchState</button>
+      <div className="row justify-content-md-center">
+        <div className="col-md-auto">
+          <div>
+            <p> Your Question is: {this.state.userQuestion} </p>
+            <form>
+              <div className="form-group">
+                <input
+                    id="search-input"
+                    className="form-control "
+                    value={this.state.userQuestion}
+                    name="userQuestion"
+                    onChange={this.handleInputChange}
+                    type="text"
+                    placeholder="ask here!"/>
+                <button className="btn btn-primary mt-3" onClick={this.handleFormSubmit}>SUBMIT</button>
+                <button className="btn btn-primary mt-3" onClick={this.clearSearchState}>Clear SearchState</button>
+              </div>
+            </form>
+          </div>
+          <div>
+            <UserResults userQues={this.state.userQuestion}/>
+          </div>
         </div>
-        </form>
-      </div>
-      <div>
-      <UserResults userQues={this.state.userQuestion}/>
-      </div>
-      </div>
       </div>
     );
   }

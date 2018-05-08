@@ -4,12 +4,7 @@ import Wrapper from "../../components/Wrapper"
 import Logo from "../../components/Logo"
 import AboutComp from "../../components/About"
 
-
-
-
-
 class About extends Component {
-
     render() {
         return(
            <div>
@@ -22,6 +17,5 @@ class About extends Component {
         );
     }
 }
-
 
 export default About;
