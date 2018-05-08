@@ -1,18 +1,15 @@
 import React from "react";
 import "./UserResults.css";
 
-
-
-const UserResults = props => (
-    <div className = "container">
+const UserResults = props => (    <div className = "container">
         <div className="row justify-content-lg-center">
-            <div className="col-lg-6" id="contentDiv">
+            <div className="col-lg-12" id="contentDiv">
 
             <div class="accordion" id="accordion">
               <div class="card">
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                       Collapsible Group Item #1
                     </button>
                   </h5>
@@ -55,8 +52,6 @@ const UserResults = props => (
 
             </div>
         </div>
-    </div>
-)
-
+    </div>)
 
 export default UserResults;

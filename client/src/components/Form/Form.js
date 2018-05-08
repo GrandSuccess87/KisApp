@@ -4,8 +4,7 @@ import UserResults from "../../components/UserResults";
 class Form extends Component {
   // Setting the component's initial state
   state = {
-  userQuestion: "",
-  results= []
+  userQuestion: ""
   };
 
   handleInputChange = event => {
@@ -60,7 +59,9 @@ class Form extends Component {
           <button className="btn btn-primary mt-3" onClick={this.handleFormSubmit}>SUBMIT</button>
         </div>
         </form>
-        <UserResults userQues={this.state.userQuestion}/>
+      </div>
+      <div>
+      <UserResults userQues={this.state.userQuestion}/>
       </div>
       </div>
       </div>

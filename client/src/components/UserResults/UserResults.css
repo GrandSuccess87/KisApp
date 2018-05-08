@@ -5,6 +5,8 @@
     margin-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
     border-color: white;
+    max-width: 320px;
+    min-width: 320px;
 
 }
 
@@ -17,4 +19,8 @@
 
 .btn {
     color: white;
+}
+
+#accordion-container {
+    width: 100%;
 }
