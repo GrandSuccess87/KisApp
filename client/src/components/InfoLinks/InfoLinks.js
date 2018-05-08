@@ -11,6 +11,10 @@ const Resources = props => (
             <div>
                 <h3>RESOURCES</h3>
             </div>
+            <div className="container">
+            <div className="row justify-content-lg-center">
+            <div className="col-lg-6" id="contentDiv">
+
             <hr className="bottomRule"></hr>
 
             <p className="aboutText">Below is a list of links and resources for additional information on Sexual Health. If you have suggestions or need additional assistance, be sure to contact us. Thanks for stopping by!</p>
@@ -18,7 +22,7 @@ const Resources = props => (
             <hr className="topRule"></hr>
 
             <div className="card-link">
-                <div className="card-body">
+                <div className="body">
 
                     <p>
                         <strong>National Sexual Assault Hotline:</strong>
@@ -58,6 +62,9 @@ const Resources = props => (
             </div>
         </div>
     </div>
+</div>
+</div>
+</div>
 </div>
     );
 
