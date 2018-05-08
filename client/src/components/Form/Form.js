@@ -50,7 +50,7 @@ class Form extends Component {
     })
   }
 
- 
+
 
 
   render() {
@@ -79,7 +79,9 @@ class Form extends Component {
           <button className="btn btn-primary mt-3" onClick={this.clearSearchState}>Clear SearchState</button>
         </div>
         </form>
-        <UserResults userQues={this.state.userQuestion}/>
+      </div>
+      <div>
+      <UserResults userQues={this.state.userQuestion}/>
       </div>
       </div>
       </div>
