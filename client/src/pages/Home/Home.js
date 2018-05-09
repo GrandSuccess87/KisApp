@@ -11,7 +11,6 @@ class Home extends Component {
         userInput: ""
     };
 
-
     render() {
         return(
            <div>
@@ -19,7 +18,8 @@ class Home extends Component {
             <Wrapper>
             <Logo />
             <Form />
-            
+        
+
             </Wrapper>
            </div>
         );

@@ -4,8 +4,6 @@ import Wrapper from "../../components/Wrapper"
 import Logo from "../../components/Logo"
 import InfoLinks from "../../components/InfoLinks"
 
-
-
 class ResourcesPage extends Component {
 
     render() {
@@ -20,6 +18,5 @@ class ResourcesPage extends Component {
         );
     }
 }
-
 
 export default ResourcesPage;

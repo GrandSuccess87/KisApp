@@ -5,6 +5,5 @@ const questionsController = require("../../controllers/questionsController");
 router.route("/")
   .get(questionsController.findAll)
   .post(questionsController.create);
-
-
+  
 module.exports = router;
