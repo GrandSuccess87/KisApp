@@ -1,0 +1,66 @@
+#notSeeingYourQuestionButton, #submitQuestionsButton {
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .5px;
+    font-size: 15px;
+    border:0;
+    border-radius: 3;
+    color: white;
+    background-color: #ED645F !important;
+}
+
+#searchAgainButton:hover, #notSeeingYourQuestionButton:hover {
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .5px;
+    font-size: 15px;
+    border:0;
+    color: white;
+    background-color: #5EB9DA !important;
+    border-radius: 2px;
+}
+
+#searchAgainButton {
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .5px;
+    font-size: 15px;
+    border:0;
+    border-radius: 3;
+    color: white;
+    background-color: #ED645F !important;
+
+}
+
+#submitQuestionsButton:hover {
+    background-color:#5EB9DA;
+    color: white;
+}
+
+.modal-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size:24px;
+    text-align: center;
+    color:#ED645F;
+
+}
+
+.modal {
+    margin-top: 160px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.modal-button {
+    color:#5EB9DA;
+}
+
+.modal-button:hover {
+    color:#ED645F;
+}
+
+.modal-text {
+    text-align: center;
+    padding: 10px;
+}
