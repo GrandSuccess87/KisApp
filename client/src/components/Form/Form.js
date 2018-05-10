@@ -28,12 +28,13 @@ class Form extends Component {
     event.preventDefault();
     this.getResults();
     this.setState({
-      userQuestion: ""
+      userQuestion: "",
+      searchResults: []
     });
   };
 
   getResults = () => {
-    axios.post("/api/questions",{
+    axios.post("/api/questions", {
       userQuestion: this.state.userQuestion
     }).then(res => {
       this.setState({
@@ -43,12 +44,13 @@ class Form extends Component {
     .catch(err => console.log(err));
   };
 
-  clearSearchState = event => {
-    event.preventDefault();
-    this.setState({
-      searchResults: []
-    })
-  }
+
+  // clearSearchState = event => {
+  //   event.preventDefault();
+  //   this.setState({
+  //     searchResults: []
+  //   })
+  // }
 
   render() {
     // Notice how each input has a `value`, `name`, and `onChange` prop
@@ -73,7 +75,7 @@ class Form extends Component {
             </form>
           </div>
           <div>
-            <UserResults userQues={this.state.userQuestion}/>
+            <UserResults results={this.state.searchResults}/>
           </div>
         </div>
       </div>

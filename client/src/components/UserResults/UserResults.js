@@ -18,6 +18,8 @@ const UserResults = props => (
           <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div className="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.                  </div>
+              {/* {props.searchResults[0].question} */}
+
           </div>
         </div>
         
