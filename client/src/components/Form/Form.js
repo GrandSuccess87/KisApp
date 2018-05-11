@@ -53,7 +53,7 @@ class Form extends Component {
   // };
 
   render() {
-    // Notice how each input has a `value`, `name`, and `onChange` prop
+    
     return (
       <div className="row justify-content-md-center">
         <div className="col-md-auto">
