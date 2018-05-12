@@ -46,10 +46,9 @@ class Form extends Component {
           searchResults: res.data,
           validationMessage: false
         })
-        if (res.data.length === 0){
-            this.setState ({returnedResults: 0})
+        if(res.data.length === 0){
+          this.setState({returnedResults:0})
         }
-
       })
       .catch(err => console.log(err));
     } else {
