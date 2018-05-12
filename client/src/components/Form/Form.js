@@ -46,7 +46,6 @@ class Form extends Component {
           searchResults: res.data,
           validationMessage: false
         })
-        console.log( "test" + res.data);
         if (res.data.length === 0){
             this.setState ({returnedResults: 0})
         }
