@@ -8,7 +8,8 @@ class Form extends Component {
   state = {
   userQuestion: "",
   searchResults: [],
-  validationMessage: false
+  validationMessage: false,
+  returnedResults: 1
   };
 
   // prints state to console for testing
@@ -45,12 +46,16 @@ class Form extends Component {
           searchResults: res.data,
           validationMessage: false
         })
+        console.log( "test" + res.data);
+        if (res.data.length === 0){
+            this.setState ({returnedResults: 0})
+        }
+
       })
       .catch(err => console.log(err));
     } else {
         this.setState({validationMessage: true})
     }
-    
 
   };
 
@@ -81,14 +86,16 @@ class Form extends Component {
                     onChange={this.handleInputChange}
                     type="text"
                     placeholder="ask here!"/>
-                    {this.state.validationMessage ? 
-                    <p class="text-danger">Make sure to ask a question silly!</p> : null}
+                    {this.state.validationMessage ?
+                    <p className="text-danger">Make sure to ask a question silly!</p> : null}
                 <button className="btn btn-primary mt-3" onClick={this.handleFormSubmit}>SUBMIT</button>
                 {/* Clear state button for testing */}
                 {/* <button className="btn btn-primary mt-3" onClick={this.clearSearchState}>Clear SearchState</button> */}
                 <br/>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#question-window">We dont have a response. Please submit your question to our database and we will get back to you soon with an answer.
-                </button>
+                {this.state.returnedResults === 0
+                    ? <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#question-window" id="database-button">We dont have a response yet. Please submit your question to our database and we will get back to you soon with an answer.
+                </button> : null}
+
               </div>
             </form>
           </div>
