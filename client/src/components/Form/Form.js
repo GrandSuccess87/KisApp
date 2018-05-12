@@ -6,7 +6,8 @@ class Form extends Component {
   // Setting the component's initial state
   state = {
   userQuestion: "",
-  searchResults: []
+  searchResults: [],
+  validationMessage: false
   };
 
   // prints state to console for testing
@@ -34,14 +35,22 @@ class Form extends Component {
   };
 
   getResults = () => {
-    axios.post("/api/questions",{
-      userQuestion: this.state.userQuestion
-    }).then(res => {
-      this.setState({
-        searchResults: res.data
+
+    if(this.state.userQuestion){
+      axios.post("/api/questions",{
+        userQuestion: this.state.userQuestion
+      }).then(res => {
+        this.setState({
+          searchResults: res.data,
+          validationMessage: false
+        })
       })
-    })
-    .catch(err => console.log(err));
+      .catch(err => console.log(err));
+    } else {
+        this.setState({validationMessage: true})
+    }
+    
+
   };
 
   // function to clear state for testing
@@ -62,12 +71,14 @@ class Form extends Component {
               <div className="form-group">
                 <input
                     id="search-input"
-                    className="form-control "
+                    className="form-control"
                     value={this.state.userQuestion}
                     name="userQuestion"
                     onChange={this.handleInputChange}
                     type="text"
                     placeholder="ask here!"/>
+                    {this.state.validationMessage ? 
+                    <p class="text-danger">Make sure to ask a question silly!</p> : null}
                 <button className="btn btn-primary mt-3" onClick={this.handleFormSubmit}>SUBMIT</button>
                 {/* Clear state button for testing */}
                 {/* <button className="btn btn-primary mt-3" onClick={this.clearSearchState}>Clear SearchState</button> */}
