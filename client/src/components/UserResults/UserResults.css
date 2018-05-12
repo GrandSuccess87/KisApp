@@ -14,8 +14,12 @@
     background-color: #5EB9DA !important;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: .25px;
+<<<<<<< HEAD
     height: auto;
 
+=======
+    height: 100%;
+>>>>>>> ba29f7c7120381c70c15a86731228b22db6b8e94
 }
 
 .btn {
@@ -25,3 +29,10 @@
 #accordion-container {
     width: 100%;
 }
+
+#button-text {
+    white-space: normal;
+}
+ #card-body-styling {
+     height: auto;
+ }
