@@ -7,7 +7,8 @@ class Form extends Component {
   state = {
   userQuestion: "",
   searchResults: [],
-  validationMessage: false
+  validationMessage: false,
+  returnedResults: 1
   };
 
   // prints state to console for testing
@@ -44,6 +45,9 @@ class Form extends Component {
           searchResults: res.data,
           validationMessage: false
         })
+        if(res.data.length === 0){
+          this.setState({returnedResults:0})
+        }
       })
       .catch(err => console.log(err));
     } else {
@@ -82,6 +86,13 @@ class Form extends Component {
                 <button className="btn btn-primary mt-3" onClick={this.handleFormSubmit}>SUBMIT</button>
                 {/* Clear state button for testing */}
                 {/* <button className="btn btn-primary mt-3" onClick={this.clearSearchState}>Clear SearchState</button> */}
+                <br/>
+                <br/>
+                {this.state.returnedResults === 0 
+                ? <button type="button" className="btn btn-primary"     data-toggle="modal" data-target="#question-window"    id="database-button">We dont have a response yet.     Please submit your question to our database and we    will get back to you soon with an answer.
+                  </button> : null
+                }
+
               </div>
             </form>
           </div>
