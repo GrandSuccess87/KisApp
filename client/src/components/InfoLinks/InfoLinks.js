@@ -21,19 +21,19 @@ const Resources = props => (
                     <p>
                         <strong>National Sexual Assault Hotline: </strong>
                         Call 800.656.HOPE (4673) to be connected with a trained staff member from a sexual assault service provider in your area. More information at
-                        <a class="resource-link" href="https://www.rainn.org/about-national-sexual-assault-telephone-hotline/">www.rainn.org/about-national-sexual-assault-telephone-hotline.</a>
+                        <a className="resource-link" href="https://www.rainn.org/about-national-sexual-assault-telephone-hotline/">www.rainn.org/about-national-sexual-assault-telephone-hotline.</a>
                     </p>
                     <hr className="topRule"></hr>
                     <p>
                         <strong>Get Tested! </strong>
                         CDC's national HIV & STI clinic locator.
-                        <a class="resource-link" href=" https://gettested.cdc.gov/">gettested.cdc.gov.</a>
+                        <a className="resource-link" href=" https://gettested.cdc.gov/">gettested.cdc.gov.</a>
                     </p>
                     <hr className="topRule"></hr>
                     <p>
                         <strong>Find free condoms near you! </strong>
                         CDC's national HIV & STI clinic locator.
-                        <a class="resource-link" href=" http://www.condomfinder.org/find.php">www.condomfinder.org</a>
+                        <a className="resource-link" href=" http://www.condomfinder.org/find.php">www.condomfinder.org</a>
                     </p>
                     <hr className="topRule"></hr>
                         <div className="card-question">
