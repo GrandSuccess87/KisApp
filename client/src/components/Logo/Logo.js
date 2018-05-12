@@ -11,7 +11,6 @@ const Logo = props => (
             <hr className="topRule"></hr>
             <h2>Knowledge is sexy.</h2>
             <hr className="bottomRule"></hr>
-            <p className="askQuestion"> Ask any sex or sexual health questions here.</p>
         </div>
     </div>
 )

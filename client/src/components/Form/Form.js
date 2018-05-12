@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import UserResults from "../../components/UserResults";
 import axios from "axios";
+import Modal from "../../components/Modal";
 
 class Form extends Component {
   // Setting the component's initial state
@@ -53,13 +54,16 @@ class Form extends Component {
   // };
 
   render() {
-    
+
     return (
       <div className="row justify-content-md-center">
         <div className="col-md-auto">
           <div>
+          <Modal/>
             <form>
               <div className="form-group">
+              <p className="askQuestion"> Ask any sex or sexual health questions here.</p>
+
                 <input
                     id="search-input"
                     className="form-control "
@@ -71,6 +75,9 @@ class Form extends Component {
                 <button className="btn btn-primary mt-3" onClick={this.handleFormSubmit}>SUBMIT</button>
                 {/* Clear state button for testing */}
                 {/* <button className="btn btn-primary mt-3" onClick={this.clearSearchState}>Clear SearchState</button> */}
+                <br/>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#question-window">We dont have a response. Please submit your question to our database and we will get back to you soon with an answer.
+                </button>
               </div>
             </form>
           </div>
