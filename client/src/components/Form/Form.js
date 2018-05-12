@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import UserResults from "../../components/UserResults";
 import axios from "axios";
+import Modal from "../../components/Modal";
 
 class Form extends Component {
   // Setting the component's initial state
@@ -53,7 +54,6 @@ class Form extends Component {
     } else {
         this.setState({validationMessage: true})
     }
-    
 
   };
 
@@ -66,32 +66,33 @@ class Form extends Component {
   // };
 
   render() {
-    
+
     return (
       <div className="row justify-content-md-center">
         <div className="col-md-auto">
           <div>
+          <Modal/>
             <form>
               <div className="form-group">
+              <p className="askQuestion"> Ask any sex or sexual health questions here.</p>
+
                 <input
                     id="search-input"
-                    className={this.state.validationMessage ? "form-control border-danger" : "form-control"}
+                    className="form-control"
                     value={this.state.userQuestion}
                     name="userQuestion"
                     onChange={this.handleInputChange}
                     type="text"
                     placeholder="ask here!"/>
-                    {this.state.validationMessage ? 
+                    {this.state.validationMessage ?
                     <p className="text-danger">Make sure to ask a question silly!</p> : null}
                 <button className="btn btn-primary mt-3" onClick={this.handleFormSubmit}>SUBMIT</button>
                 {/* Clear state button for testing */}
                 {/* <button className="btn btn-primary mt-3" onClick={this.clearSearchState}>Clear SearchState</button> */}
                 <br/>
-                <br/>
-                {this.state.returnedResults === 0 
-                ? <button type="button" className="btn btn-primary"     data-toggle="modal" data-target="#question-window"    id="database-button">We dont have a response yet.     Please submit your question to our database and we    will get back to you soon with an answer.
-                  </button> : null
-                }
+                {this.state.returnedResults === 0
+                    ? <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#question-window" id="database-button">We dont have a response yet. Please submit your question to our database and we will get back to you soon with an answer.
+                </button> : null}
 
               </div>
             </form>
