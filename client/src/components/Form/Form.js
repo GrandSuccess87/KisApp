@@ -71,14 +71,14 @@ class Form extends Component {
               <div className="form-group">
                 <input
                     id="search-input"
-                    className="form-control"
+                    className={this.state.validationMessage ? "form-control border-danger" : "form-control"}
                     value={this.state.userQuestion}
                     name="userQuestion"
                     onChange={this.handleInputChange}
                     type="text"
                     placeholder="ask here!"/>
                     {this.state.validationMessage ? 
-                    <p class="text-danger">Make sure to ask a question silly!</p> : null}
+                    <p className="text-danger">Make sure to ask a question silly!</p> : null}
                 <button className="btn btn-primary mt-3" onClick={this.handleFormSubmit}>SUBMIT</button>
                 {/* Clear state button for testing */}
                 {/* <button className="btn btn-primary mt-3" onClick={this.clearSearchState}>Clear SearchState</button> */}
