@@ -3,6 +3,7 @@ import "./AboutComp.css";
 import Erica from "./erica.jpg";
 import Quintessa from "./quintessa.jpg";
 import Ozzy from "./ozzy.jpg";
+import Sarah from "./sarah.jpg"
 
 const AboutComp = props => (
     <div className="container">
@@ -24,7 +25,7 @@ const AboutComp = props => (
                             <div className="card-body">
                                 <h5 className="card-title">QUINTESSA ANDERSON</h5>
                                 <img className="card-img-top" src={Quintessa} alt="quintessa anderson"></img>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Lorem Ipsum write stuff to fill the space here about us.Some quick example text to build on the card title and make up the bulk of the card's content.Lorem Ipsum write stuff to fill the space here about us.
+                                <p className="card-text">Quintessa is a Summa Cum Laude graduate from Rush University demonstrating commitment to excellence, competence, and character. she has a strong passion for setting high goals.
                                 </p>
                             </div>
                         </div>
@@ -48,7 +49,7 @@ const AboutComp = props => (
                         <div className="card about-card">
                             <div className="card-body">
                                 <h5 className="card-title">SARAH LEONE</h5>
-                                <img className="card-img-top" src={Erica} alt="sarah leone"></img>
+                                <img className="card-img-top" src={Sarah} alt="sarah leone"></img>
                                 <p className="card-text"> Sarah is currently a student at Northwestern's Coding Bootcamp. She is also interested in library sciences and wholistic community wellness. She is bilingual in English and Spanish and if there is any chance she can use this skill, that's a plus!</p>
                             </div>
                         </div>
