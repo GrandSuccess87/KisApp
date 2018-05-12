@@ -9,6 +9,7 @@ class Form extends Component {
   searchResults: []
   };
 
+  // prints state to console for testing
   componentDidUpdate(){
     console.log(this.state);
   }
@@ -43,20 +44,20 @@ class Form extends Component {
     .catch(err => console.log(err));
   };
 
-  clearSearchState = event => {
-    event.preventDefault();
-    this.setState({
-      searchResults: []
-    })
-  }
+  // function to clear state for testing
+  // clearSearchState = event => {
+  //   event.preventDefault();
+  //   this.setState({
+  //     searchResults: []
+  //   })
+  // };
 
   render() {
-    // Notice how each input has a `value`, `name`, and `onChange` prop
+    
     return (
       <div className="row justify-content-md-center">
         <div className="col-md-auto">
           <div>
-            <p> Your Question is: {this.state.userQuestion} </p>
             <form>
               <div className="form-group">
                 <input
@@ -68,12 +69,13 @@ class Form extends Component {
                     type="text"
                     placeholder="ask here!"/>
                 <button className="btn btn-primary mt-3" onClick={this.handleFormSubmit}>SUBMIT</button>
-                <button className="btn btn-primary mt-3" onClick={this.clearSearchState}>Clear SearchState</button>
+                {/* Clear state button for testing */}
+                {/* <button className="btn btn-primary mt-3" onClick={this.clearSearchState}>Clear SearchState</button> */}
               </div>
             </form>
           </div>
           <div>
-            <UserResults userQues={this.state.userQuestion}/>
+            <UserResults results={this.state.searchResults}/>
           </div>
         </div>
       </div>
