@@ -1,0 +1,12 @@
+.modal-text {
+    text-align: center;
+    padding: 10px;
+}
+
+h4 {
+    color: blue;
+}
+
+.modal-header {
+    display: block;
+}
