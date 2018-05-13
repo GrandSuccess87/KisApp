@@ -53,3 +53,17 @@
 p {
     color: grey;
 }
+h3 {
+    margin-top: 40px;
+}
+
+.card-body {
+    height: auto;
+    background-color: #D3D1D3 !important;
+
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+
+}
