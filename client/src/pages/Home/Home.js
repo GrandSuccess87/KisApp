@@ -18,7 +18,6 @@ class Home extends Component {
             <Wrapper>
             <Logo />
             <Form />
-        
 
             </Wrapper>
            </div>

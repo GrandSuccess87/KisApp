@@ -22,19 +22,26 @@
     letter-spacing: .25px;
     border-radius: 4px;
     background-color: #9D9EA1;
-    height: 200px;
+    height: auto;
 
 }
 
-p {
-    color: white;
-}
-
-.aboutText {
-    color: #3B3C40;
+.about-card {
+    background-color: #3B3C40;
+    border-radius: 4px;
+    margin-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
+    border-color: white;
+    max-width: 100%;
+    min-width: 320px;
+}
+
+#about-text {
+    font-family: 'Open Sans', sans-serif;
+    color: #3B3C40;
     letter-spacing: .25px;
     margin-bottom: 23px;
+    font-size: 17px;
 }
 
 
@@ -43,4 +50,13 @@ h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-size:34px;
+}
+
+.card-text {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #3B3C40;
+    letter-spacing: .25px;
+    margin-bottom: 23px;
+
 }
