@@ -17,7 +17,7 @@
     border:0;
     border-radius: 2;
     color: white;
-    background-color: #ED645F !important ;
+    /* background-color: #ED645F !important ; */
     border-radius: 2px;
     border-color: white;
 }
@@ -26,5 +26,8 @@
     background-color:#5EB9DA !important ;
     color: white;
     border-color: white;
+}
 
+.card-body {
+    font-family: 'Open Sans', sans-serif;
 }
