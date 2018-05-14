@@ -4,9 +4,13 @@ import Home from "./pages/Home";
 import About from "./pages/About"
 import ResourcesPage from "./pages/Resources"
 import GoogleLogin from "react-google-login"
-
+import { GoogleLogout } from "react-google-login"
 
 const responseGoogle = (response) => {
+  console.log(response);
+}
+
+const logout = (response) => {
   console.log(response);
 }
  
@@ -15,10 +19,16 @@ const App = () => (
   <div>
   <GoogleLogin
     clientId="73580094877-njrsmo353tvtk1kt4c36mqgfiqumbll5.apps.googleusercontent.com"
-    buttonText="Login"
+    buttonText="Login with Google"
     onSuccess={responseGoogle}
     onFailure={responseGoogle}
   />
+
+  <GoogleLogout
+      buttonText="Logout"
+      onLogoutSuccess={logout}
+    >
+    </GoogleLogout>
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
