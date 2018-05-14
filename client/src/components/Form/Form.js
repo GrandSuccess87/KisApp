@@ -9,7 +9,7 @@ class Form extends Component {
   userQuestion: "",
   searchResults: [],
   validationMessage: false,
-  returnedResults: 1
+  returnedResults: 0
   };
 
   // prints state to console for testing
@@ -86,9 +86,9 @@ class Form extends Component {
                 {this.state.returnedResults === 0
                     ? <div className="card w-50 mx-auto">
                       <div className="card-body">
-                      <h1 className="card-title">We don't have a response yet</h1>
+                      <h1 className="card-title">WE DON'T HAVE A RESPONSE YET</h1>
                       <p className="card-text">Click to submit your question and we will get back to you soon with an answer</p>
-                      <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#question-window" id="database-button">Click Me</button>
+                      <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#question-window" id="database-button">CLICK ME</button>
                       </div>
                       </div> : null}
               </div>
