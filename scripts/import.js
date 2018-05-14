@@ -20,6 +20,7 @@ router.post('/api/questions', function (req, res) {
 
   index.search(req.body.userQuestion, function (err, content) {
     if (err) throw err;
+    console.log('Error: ' + err);
     // console.log(content.hits);node
     res.json(content.hits);
     //
