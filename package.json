@@ -45,6 +45,7 @@
     "express": "^4.15.4",
     "mongoose": "^5.0.17",
     "npm": "^6.0.0",
+    "react-facebook-login": "^4.0.1",
     "react-google-login": "^3.2.1"
   }
 }
