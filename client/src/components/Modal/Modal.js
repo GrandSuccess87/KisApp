@@ -7,7 +7,7 @@ const Modal = props => (
     <div className="modal-dialog modal-sm">
         <div className="modal-content">
             <div className="modal-header">
-                <h4 className="modal-title">NOT SATISFIED WITH THESE QUESTIONS?</h4>
+                <h4 className="modal-title">NOT SATISFIED WITH <br/>THESE QUESTIONS?</h4>
                 <hr></hr>
                 <p className="modal-text">
                     Submit your question and we'll answer it! When others have your question, they'll get to see the answer.</p>

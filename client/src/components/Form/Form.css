@@ -24,9 +24,12 @@
 }
 
 .btn-primary:hover {
-    background-color:#5EB9DA !important ;
-    color: white;
-    border-color: white;
+    background-color: #8CCEE4;
+
+}
+
+.btn-link:hover {
+    color: #8CCEE4;
 }
 
 .card-body {
