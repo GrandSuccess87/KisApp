@@ -134,7 +134,7 @@ class GoogleLogin extends Component {
 
     const initialStyle = {
       display: 'inline-block',
-      background: '#d14836',
+      background: '#ED645F',
       color: '#fff',
       width: 190,
       paddingTop: 10,
@@ -143,7 +143,8 @@ class GoogleLogin extends Component {
       border: '1px solid transparent',
       fontSize: 16,
       fontWeight: 'bold',
-      fontFamily: 'Roboto'
+      fontFamily: 'Roboto',
+      marginLeft: 20
     }
     const styleProp = (() => {
       if (style) {
