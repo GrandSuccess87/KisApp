@@ -27,12 +27,22 @@
     background-color: #8CCEE4;
 
 }
+#submitButton {
+    color: white;
+}
 
 .btn-link:hover {
-    color: #8CCEE4;
+    color: white;
 }
 
 .card-body {
     font-family: 'Open Sans', sans-serif;
     color: #3B3C40;
+}
+.btn {
+    color: #3B3C40;
+
+}
+.card-header {
+    background-color: #8CCEE4;
 }

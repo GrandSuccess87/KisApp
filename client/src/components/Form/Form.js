@@ -81,7 +81,7 @@ class Form extends Component {
                     placeholder="ask here!"/>
                     {this.state.validationMessage ?
                     <p className="text-danger">Make sure to ask a question silly!</p> : null}
-                <button className="btn btn-primary mt-3" onClick={this.handleFormSubmit}>SUBMIT</button>
+                <button className="btn btn-primary mt-3" id="submitButton" onClick={this.handleFormSubmit}>SUBMIT</button>
                 <br/>
                 <br/>
                 {this.state.returnedResults === 0
