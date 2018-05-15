@@ -141,9 +141,9 @@ class GoogleLogin extends Component {
       paddingBottom: 10,
       borderRadius: 2,
       border: '1px solid transparent',
-      fontSize: 16,
+      fontSize: 14,
       fontWeight: 'bold',
-      fontFamily: 'Roboto',
+      fontFamily: 'open sans',
       marginLeft: 20
     }
     const styleProp = (() => {
