@@ -49,24 +49,6 @@ const App = () => (
       <span>Login with Google</span>
     </GoogleLogin>
 
-    {/* <GoogleLogin
-      clientId={clientId}
-      scope="https://www.googleapis.com/auth/adwords"
-      onSuccess={success}
-      onFailure={error}
-      onRequest={loading}
-      approvalPrompt="force"
-      responseType="code"
-      // uxMode="redirect"
-      // redirectUri="http://google.com"
-      // disabled
-      // prompt="consent"
-      // className='button'
-      // style={{ color: 'red' }}
-    >
-      <span>Adwords</span>
-    </GoogleLogin> */}
-
     <GoogleLogout buttonText="Logout" onLogoutSuccess={logout} />
 
 
