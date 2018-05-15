@@ -1,6 +1,5 @@
 import React from "react";
 import "./UserResults.css";
-import AlgoliaLogo from "./algolia-logo-light.png"
 
 
 
@@ -73,7 +72,6 @@ const UserResults = props => {
     
           </div>
         </div>
-        <div> Our Search is powered by Algoia <img /></div>
       </div>
       </div>
     )} else {

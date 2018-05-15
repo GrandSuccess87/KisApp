@@ -16,6 +16,7 @@ app.use(express.static("client/build"));
 // API Routes
 app.use("/", require('./scripts/import.js'));
 
+
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/KisAppDatabase");
 
