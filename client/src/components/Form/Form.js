@@ -9,7 +9,7 @@ class Form extends Component {
   userQuestion: "",
   searchResults: [],
   validationMessage: false,
-  returnedResults: 0
+  returnedResults: 1
   };
 
   // prints state to console for testing
