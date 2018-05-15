@@ -13,8 +13,8 @@ const Modal = props => (
                     Submit your question and we'll answer it! When others have your question, they'll get to see the answer.</p>
             </div>
             <div className="modal-footer">
-                <button type="button" className="btn btn-secondary modal-button" data-dismiss="modal">CANCEL</button>
-                <button type="button" className="btn btn-secondary modal-button" data-dismiss="modal">SUBMIT QUESTION</button>
+                <button type="button" className="btn btn-secondary modal-button" id="modalButton" data-dismiss="modal">CANCEL</button>
+                <button type="button" className="btn btn-secondary modal-button" data-dismiss="modal" id="modalButtonSubmit">SUBMIT QUESTION</button>
             </div>
         </div>
     </div>

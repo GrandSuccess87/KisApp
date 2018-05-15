@@ -16,14 +16,21 @@ h4  {
     display: block;
 }
 
-.modal-button {
+#modalButton, #modalButtonSubmit {
     color:#5EB9DA;
     background-color: white;
     border-color: white;
 
 }
 
-.modal-button:hover {
+
+#modalButton:hover {
+    color:#ED645F;
+    background-color: white;
+    border-color: white;
+}
+
+#modalButtonSubmit:hover {
     color:#ED645F;
     background-color: white;
     border-color: white;
