@@ -143,7 +143,7 @@ class GoogleLogin extends Component {
       border: '1px solid transparent',
       fontSize: 16,
       fontWeight: 'bold',
-      fontFamily: 'Roboto'
+      fontFamily: 'Roboto',
     }
     const styleProp = (() => {
       if (style) {
