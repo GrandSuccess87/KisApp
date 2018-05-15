@@ -3,6 +3,7 @@ import Logo from "../../components/Logo";
 import Nav from "../../components/Nav";
 import Wrapper from "../../components/Wrapper";
 import Form from "../../components/Form";
+import Footer from "../../components/Footer"
 
 
 class Home extends Component {
@@ -20,6 +21,7 @@ class Home extends Component {
             <Form />
 
             </Wrapper>
+            <Footer />
            </div>
         );
     }
