@@ -3,43 +3,72 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ResourcesPage from "./pages/Resources";
-import GoogleLogin from "react-google-login";
-import { GoogleLogout } from "react-google-login";
-// import FacebookLogin from 'react-facebook-login';
+// import GoogleLogin from "react-google-login";
+// import { GoogleLogout } from "react-google-login";
+import { GoogleLogout, GoogleLogin } from "../src/index";
 
-const responseGoogle = (response) => {
-  console.log(response);
+const clientId = '73580094877-njrsmo353tvtk1kt4c36mqgfiqumbll5.apps.googleusercontent.com'
+// import GoogleLogin, { GoogleLogout } from '../dist/google-login'
+
+const success = response => {
+  console.log(response)
 }
 
-const logout = (response) => {
-  console.log(response);
+const error = response => {
+  console.error(response)
+}
+
+const loading = () => {
+  console.log('loading')
+}
+
+const logout = () => {
+  console.log('logout')
 }
 
 
 const App = () => (
   <Router>
+
   <div>
-  <GoogleLogin
-    clientId="73580094877-njrsmo353tvtk1kt4c36mqgfiqumbll5.apps.googleusercontent.com"
-    buttonText="Login with Google"
-    onSuccess={responseGoogle}
-    onFailure={responseGoogle}
-  />
+    <GoogleLogin
+      clientId={clientId}
+      scope="https://www.googleapis.com/auth/analytics"
+      onSuccess={success}
+      onFailure={error}
+      onRequest={loading}
+      offline={false}
+      approvalPrompt="force"
+      responseType="id_token"
+      isSignedIn
+      // disabled
+      // prompt="consent"
+      // className='button'
+      // style={{ color: 'red' }}
+    >
+      <span>Login with Google</span>
+    </GoogleLogin>
 
-  <GoogleLogout
-      buttonText="Logout"
-      onLogoutSuccess={logout}
-  >
-    </GoogleLogout>
+    {/* <GoogleLogin
+      clientId={clientId}
+      scope="https://www.googleapis.com/auth/adwords"
+      onSuccess={success}
+      onFailure={error}
+      onRequest={loading}
+      approvalPrompt="force"
+      responseType="code"
+      // uxMode="redirect"
+      // redirectUri="http://google.com"
+      // disabled
+      // prompt="consent"
+      // className='button'
+      // style={{ color: 'red' }}
+    >
+      <span>Adwords</span>
+    </GoogleLogin> */}
 
-    {/* <FacebookLogin
-    appId="1906569722966905"
-    autoLoad={true}
-    fields="name,email,picture"
-    onClick={componentClicked}
-    callback={responseFacebook}
-    cssClass="my-facebook-button-class"
-    icon="fa-facebook" /> */}
+    <GoogleLogout buttonText="Logout" onLogoutSuccess={logout} />
+
 
     <Switch>
       <Route exact path="/" component={Home} />
