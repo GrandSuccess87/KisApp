@@ -60,10 +60,7 @@ class GoogleLogout extends Component {
       fontSize: 16,
       fontWeight: 'bold',
       fontFamily: 'Roboto',
-<<<<<<< HEAD
-=======
       marginLeft: 20,
->>>>>>> master
     }
     const styleProp = (() => {
       if (style) {
