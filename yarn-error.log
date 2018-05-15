@@ -1,14 +1,25 @@
 Arguments: 
+<<<<<<< HEAD
   /usr/local/bin/node /usr/local/bin/yarn start
 
 PATH: 
   /Library/Frameworks/Python.framework/Versions/3.6/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin
+=======
+  /usr/local/Cellar/node/9.11.1/bin/node /usr/local/bin/yarn start
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin
+>>>>>>> 65a7945c0ca437e3fad5f90bf9f5b4cc01641ab3
 
 Yarn version: 
   1.5.1
 
 Node version: 
+<<<<<<< HEAD
   8.11.0
+=======
+  9.11.1
+>>>>>>> 65a7945c0ca437e3fad5f90bf9f5b4cc01641ab3
 
 Platform: 
   darwin x64
@@ -61,6 +72,10 @@ npm manifest:
       "express": "^4.15.4",
       "mongoose": "^5.0.17",
       "npm": "^6.0.0",
+<<<<<<< HEAD
+=======
+      "react-facebook-login": "^4.0.1",
+>>>>>>> 65a7945c0ca437e3fad5f90bf9f5b4cc01641ab3
       "react-google-login": "^3.2.1"
     }
   }
@@ -2977,6 +2992,13 @@ Lockfile:
       minimist "^1.2.0"
       strip-json-comments "~2.0.1"
   
+<<<<<<< HEAD
+=======
+  react-facebook-login@^4.0.1:
+    version "4.0.1"
+    resolved "https://registry.yarnpkg.com/react-facebook-login/-/react-facebook-login-4.0.1.tgz#7d43672ee86e3f2cd9e8758de1e61eb66a212611"
+  
+>>>>>>> 65a7945c0ca437e3fad5f90bf9f5b4cc01641ab3
   react-google-login@^3.2.1:
     version "3.2.1"
     resolved "https://registry.yarnpkg.com/react-google-login/-/react-google-login-3.2.1.tgz#9ab6ac3694d0e6e2974f1e588c53cf7b903a36e6"
@@ -3955,16 +3977,29 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
+<<<<<<< HEAD
   Exit signal: SIGHUP
   Command: sh
   Arguments: -c concurrently "nodemon server.js" "npm run client"
   Directory: /Users/sarahleone/Documents/Northwestern_CB/Project3/KisApp
+=======
+  Exit code: 127
+  Command: sh
+  Arguments: -c concurrently "nodemon server.js" "npm run client"
+  Directory: /Users/ericabarraca/Desktop/KisApp
+>>>>>>> 65a7945c0ca437e3fad5f90bf9f5b4cc01641ab3
   Output:
   
       at ProcessTermError.MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
       at new ProcessTermError (/usr/local/lib/node_modules/yarn/lib/cli.js:226:113)
       at ChildProcess.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:30281:17)
+<<<<<<< HEAD
       at emitTwo (events.js:126:13)
       at ChildProcess.emit (events.js:214:7)
       at maybeClose (internal/child_process.js:925:16)
       at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+=======
+      at ChildProcess.emit (events.js:180:13)
+      at maybeClose (internal/child_process.js:936:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)
+>>>>>>> 65a7945c0ca437e3fad5f90bf9f5b4cc01641ab3

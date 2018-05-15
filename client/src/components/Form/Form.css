@@ -13,21 +13,40 @@
     margin-top: 15px;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: .5px;
-    font-size: 19px;
+    font-size: 17px;
     border:0;
     border-radius: 2;
     color: white;
-    /* background-color: #ED645F !important ; */
+    background-color: #ED645F;
     border-radius: 2px;
     border-color: white;
+
 }
 
 .btn-primary:hover {
-    background-color:#5EB9DA !important ;
+    background-color: #8CCEE4;
+
+}
+#submitButton {
     color: white;
-    border-color: white;
+}
+
+#database-button {
+    color: white;
+}
+
+.btn-link:hover {
+    color: white;
 }
 
 .card-body {
     font-family: 'Open Sans', sans-serif;
+    color: #3B3C40;
+}
+.btn {
+    color: #3B3C40;
+
+}
+.card-header {
+    background-color: #8CCEE4;
 }
