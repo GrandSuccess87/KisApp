@@ -7282,6 +7282,22 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
+<<<<<<< HEAD
+  Error: Command failed.
+  Exit code: 1
+  Command: sh
+  Arguments: -c react-scripts start
+  Directory: /Users/sarahleone/Documents/Northwestern_CB/Project3/KisApp/client
+  Output:
+  
+      at ProcessTermError.MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
+      at new ProcessTermError (/usr/local/lib/node_modules/yarn/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:30281:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+=======
   Error: Command "isntall" not found.
       at new MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
       at /usr/local/lib/node_modules/yarn/lib/cli.js:87307:17
@@ -7293,3 +7309,4 @@ Trace:
       at /usr/local/lib/node_modules/yarn/lib/cli.js:95:12
       at runCommand (/usr/local/lib/node_modules/yarn/lib/cli.js:87312:22)
       at Object.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:87412:14)
+>>>>>>> f0e6a1db64be9301915c86d0aabe05757daa0dba

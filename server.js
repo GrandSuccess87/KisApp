@@ -23,11 +23,14 @@ if (process.env.NODE_ENV === "production") {
 // API Routes
 app.use("/", require('./scripts/import.js'));
 
+<<<<<<< HEAD
+=======
 // Send every other request to the React app
 // Define any API routes before this runs
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
+>>>>>>> 65a7945c0ca437e3fad5f90bf9f5b4cc01641ab3
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/KisAppDatabase");
