@@ -13,13 +13,14 @@
     margin-top: 15px;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: .5px;
-    font-size: 19px;
+    font-size: 17px;
     border:0;
     border-radius: 2;
     color: white;
-    /* background-color: #ED645F !important ; */
+    background-color: #ED645F;
     border-radius: 2px;
     border-color: white;
+
 }
 
 .btn-primary:hover {
@@ -30,4 +31,5 @@
 
 .card-body {
     font-family: 'Open Sans', sans-serif;
+    color: #3B3C40;
 }

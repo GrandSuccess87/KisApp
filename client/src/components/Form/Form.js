@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import UserResults from "../../components/UserResults";
 import axios from "axios";
 import Modal from "../../components/Modal";
+import "./Form.css";
 
 class Form extends Component {
   // Setting the component's initial state
