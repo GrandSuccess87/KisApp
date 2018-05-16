@@ -50,6 +50,7 @@ const App = () => (
 
     </GoogleLogin>
 
+
     <GoogleLogout buttonText="Logout" onLogoutSuccess={logout} />
 
 
