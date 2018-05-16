@@ -7,8 +7,8 @@ const UserResults = props => {
   console.log(props);
 
   if(props.results.length > 0){
-    return (    
-      <div className = "container">
+    return (
+      <div className = "container" id="answer-container">
       <div className="row justify-content-lg-center">
         <div className="col-lg-12" id="contentDiv">
           <div className="accordion" id="accordion">
@@ -69,12 +69,13 @@ const UserResults = props => {
                 </div>
               </div>
             </div>
-    
           </div>
         </div>
       </div>
       </div>
-    )} else {
+    )
+
+  } else {
       return null
     }
   } 
