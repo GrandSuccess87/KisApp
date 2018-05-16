@@ -36,9 +36,8 @@ const Nav = props => (
         <li className="nav-item navbar-right">
           <a className="nav-link" href="/resources">RESOURCES</a>
         </li>
-        <li className="nav-item navbar-right">
-          <a className="nav-link" href="">
-            <GoogleLogin
+      </ul>
+      <GoogleLogin
               clientId={clientId}
               scope="https://www.googleapis.com/auth/analytics"
               onSuccess={success}
@@ -53,16 +52,9 @@ const Nav = props => (
               // className='button'
               // style={{ color: 'red' }}
               >
-            LOGIN WITH GOOGLE
+            LOGIN
             </GoogleLogin>
-          </a> 
-        </li>
-        <li className="nav-item navbar-right">
-          <a className="nav-link" href="">
-            <GoogleLogout buttonText="LOGOUT" onLogoutSuccess={logout} />
-          </a> 
-        </li>
-      </ul>
+      <GoogleLogout buttonText="LOGOUT" onLogoutSuccess={logout} />
     </div>
   </nav>
 );
