@@ -1,6 +1,25 @@
 import React from "react";
 import "./Nav.css";
-// import GoogleLogin from "../components/GoogleLogin/GoogleLogin";
+import { GoogleLogout, GoogleLogin } from "../../../src/index";
+
+const clientId = '73580094877-njrsmo353tvtk1kt4c36mqgfiqumbll5.apps.googleusercontent.com'
+// import GoogleLogin, { GoogleLogout } from '../dist/google-login'
+
+const success = response => {
+  console.log(response)
+}
+
+const error = response => {
+  console.error(response)
+}
+
+const loading = () => {
+  console.log('loading')
+}
+
+const logout = () => {
+  console.log('logout')
+}
 
 
 const Nav = props => (
@@ -16,6 +35,32 @@ const Nav = props => (
         </li>
         <li className="nav-item navbar-right">
           <a className="nav-link" href="/resources">RESOURCES</a>
+        </li>
+        <li className="nav-item navbar-right">
+          <a className="nav-link" href="">
+            <GoogleLogin
+              clientId={clientId}
+              scope="https://www.googleapis.com/auth/analytics"
+              onSuccess={success}
+              onFailure={error}
+              onRequest={loading}
+              offline={false}
+              approvalPrompt="force"
+              responseType="id_token"
+              isSignedIn
+              // disabled
+              // prompt="consent"
+              // className='button'
+              // style={{ color: 'red' }}
+              >
+            LOGIN WITH GOOGLE
+            </GoogleLogin>
+          </a> 
+        </li>
+        <li className="nav-item navbar-right">
+          <a className="nav-link" href="">
+            <GoogleLogout buttonText="LOGOUT" onLogoutSuccess={logout} />
+          </a> 
         </li>
       </ul>
     </div>
