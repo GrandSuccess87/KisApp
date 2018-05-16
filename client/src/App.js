@@ -15,7 +15,7 @@ const success = response => {
 }
 
 const error = response => {
-  console.error(response)
+  console.log(response);
 }
 
 const loading = () => {
