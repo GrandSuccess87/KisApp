@@ -20,7 +20,7 @@ JQuery
 
 Original GitHub Source Code: https://github.com/edominici/knowledge-is-sexy
 
-KisApp can be viewed [here](https://kis-app.herokuapp.com/)
+KisApp can be viewed [here](https://kis-app.herokuapp.com/).
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
