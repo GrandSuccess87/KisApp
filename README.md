@@ -20,7 +20,7 @@ Express.js
 Node.js (Backend Framework)
 
 Original GitHub Source Code: https://github.com/edominici/knowledge-is-sexy<br>
-React Google authentication/authorization source code which can be found [here](anthonyjgrove/react-google-login)
+React Google authentication/authorization source code can be found [here](anthonyjgrove/react-google-login)
 
 KisApp can be viewed live [here](https://kis-app.herokuapp.com/).
 
