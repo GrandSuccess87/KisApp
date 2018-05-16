@@ -46,7 +46,8 @@ const App = () => (
       // className='button'
       // style={{ color: 'red' }}
     >
-      <span>Login with Google</span>
+      <span>LOGIN WITH GOOGLE</span>
+
     </GoogleLogin>
 
     <GoogleLogout buttonText="Logout" onLogoutSuccess={logout} />

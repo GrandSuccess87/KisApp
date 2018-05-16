@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { GoogleLogout } from "../src/index";
 
 class GoogleLogin extends Component {
   constructor(props) {
@@ -86,10 +85,6 @@ class GoogleLogin extends Component {
       disabled: false
     })
   }
-    logout(){
-    console.log('logout')
-  }
-
   signIn(e) {
     if (e) {
       e.preventDefault() // to prevent submit if used within form
@@ -106,8 +101,6 @@ class GoogleLogin extends Component {
       } else {
         auth2.signIn(options).then(res => this.handleSigninSuccess(res), err => onFailure(err))
       }
-      <GoogleLogout buttonText="Logout" />
-
     }
   }
   handleSigninSuccess(res) {
@@ -141,19 +134,17 @@ class GoogleLogin extends Component {
 
     const initialStyle = {
       display: 'inline-block',
-      background: '#F8F9FA',
+      background: '#ED645F',
       color: '#fff',
       width: 190,
       paddingTop: 10,
       paddingBottom: 10,
+      borderRadius: 2,
       border: '1px solid transparent',
       fontSize: 14,
       fontWeight: 'bold',
       fontFamily: 'open sans',
-      float: 'right',
-      height: 92,
-      marginTop: 42,
-      color: 'red'
+      marginLeft: 20
     }
     const styleProp = (() => {
       if (style) {

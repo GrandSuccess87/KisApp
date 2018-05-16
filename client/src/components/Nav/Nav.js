@@ -1,5 +1,7 @@
 import React from "react";
 import "./Nav.css";
+// import GoogleLogin from "../components/GoogleLogin/GoogleLogin";
+
 
 const Nav = props => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
