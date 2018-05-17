@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { GoogleLogout } from "../src/index";
+// import { GoogleLogout } from "../src/index";
+
 
 class GoogleLogin extends Component {
   constructor(props) {
@@ -106,7 +107,8 @@ class GoogleLogin extends Component {
       } else {
         auth2.signIn(options).then(res => this.handleSigninSuccess(res), err => onFailure(err))
       }
-      <GoogleLogout buttonText="Logout" />
+
+      // <GoogleLogout buttonText="Logout" />
 
     }
   }
@@ -227,5 +229,6 @@ GoogleLogin.defaultProps = {
   onRequest: () => {},
   jsSrc: 'https://apis.google.com/js/client:platform.js'
 }
+
 
 export default GoogleLogin

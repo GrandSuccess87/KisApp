@@ -1,6 +1,5 @@
-import React from "react"
-import "./UserQuestion.css"
-
+import React from "react";
+import "./UserQuestion.css";
 
 const UserQuestion = props => (
     <div>

@@ -1,8 +1,6 @@
 import React from "react";
 import "./UserResults.css";
 
-
-
 const UserResults = props => { 
   console.log(props);
 
@@ -74,12 +72,9 @@ const UserResults = props => {
       </div>
       </div>
     )
-
   } else {
-      return null
-    }
-  } 
-
-  
+    return null;
+  }
+}; 
 
 export default UserResults;
