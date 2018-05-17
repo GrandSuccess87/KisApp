@@ -1,8 +1,7 @@
 import React from "react";
 import "./Logo.css";
-import "./animate.min.css"
-import Logoimg from "./kis.png"
-
+import "./animate.min.css";
+import Logoimg from "./kis.png";
 
 const Logo = props => (
     <div className="row justify-content-md-center">
@@ -13,7 +12,6 @@ const Logo = props => (
             <hr className="bottomRule"></hr>
         </div>
     </div>
-)
-
+);
 
 export default Logo;

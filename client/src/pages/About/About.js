@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import Nav from "../../components/Nav";
-import Wrapper from "../../components/Wrapper"
-import Logo from "../../components/Logo"
-import AboutComp from "../../components/About"
-import Footer from "../../components/Footer"
+import Wrapper from "../../components/Wrapper";
+import Logo from "../../components/Logo";
+import AboutComp from "../../components/About";
+import Footer from "../../components/Footer";
 
 
 class About extends Component {
@@ -19,6 +19,6 @@ class About extends Component {
            </div>
         );
     }
-}
+};
 
 export default About;

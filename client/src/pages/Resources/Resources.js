@@ -20,6 +20,6 @@ class ResourcesPage extends Component {
            </div>
         );
     }
-}
+};
 
 export default ResourcesPage;

@@ -12,11 +12,18 @@ class Form extends Component {
   validationMessage: false,
   returnedResults: 1
   };
-
+  
   // prints state to console for testing
   componentDidUpdate(){
     console.log(this.state);
+    console.log("props: " + this.props.log);
   }
+
+  // constructor(props) {
+  //   super(props);
+  //   console.log("props: " + JSON.stringify(props))
+  //   console.log("props: " + props.log)
+  // }
 
   handleInputChange = event => {
     // Getting the value and name of the input which triggered the change
@@ -39,7 +46,6 @@ class Form extends Component {
   };
 
   getResults = () => {
-
     if(this.state.userQuestion){
       axios.post("/api/questions",{
         userQuestion: this.state.userQuestion
@@ -64,8 +70,9 @@ class Form extends Component {
     elmnt.scrollIntoView();
   }
 
-  render() {
 
+
+  render() {
     return (
       <div className="row justify-content-md-center">
         <div className="col-md-auto">
@@ -74,7 +81,6 @@ class Form extends Component {
             <form>
               <div className="form-group">
               <p className="askQuestion"> Ask any sex or sexual health questions here.</p>
-
                 <input
                     id="search-input"
                     className={this.state.validationMessage ? "form-control border-danger" : "form-control"}
@@ -109,6 +115,6 @@ class Form extends Component {
       </div>
     );
   }
-}
+};
 
 export default Form;
