@@ -7,14 +7,30 @@ import Footer from "../../components/Footer"
 
 
 class Home extends Component {
+    
+    state = {
+        isLoggedIn: false
+        };
+
+    logUserIn = () => {
+        this.setState({isLoggedIn:true})
+    };
+
+    logUserOut = () => {
+        this.setState({isLoggedIn:false})
+    };
 
     render() {
         return(
            <div>
-           <Nav />
+           <Nav 
+           log={this.state.isLoggedIn}
+           logIn={this.logUserIn}
+           logOut={this.logUserOut}
+           />
             <Wrapper>
             <Logo />
-            <Form />
+            <Form log={this.state.isLoggedIn}/>
 
             </Wrapper>
             <Footer />

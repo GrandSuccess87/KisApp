@@ -12,11 +12,18 @@ class Form extends Component {
   validationMessage: false,
   returnedResults: 1
   };
-
+  
   // prints state to console for testing
   componentDidUpdate(){
     console.log(this.state);
+    console.log("props: " + this.props.log);
   }
+
+  // constructor(props) {
+  //   super(props);
+  //   console.log("props: " + JSON.stringify(props))
+  //   console.log("props: " + props.log)
+  // }
 
   handleInputChange = event => {
     // Getting the value and name of the input which triggered the change
@@ -63,6 +70,8 @@ class Form extends Component {
     var elmnt = document.getElementById("headingThree");
     elmnt.scrollIntoView();
   }
+
+
 
   render() {
 

@@ -2,7 +2,10 @@ import React from "react"
 import "./UserQuestion.css"
 
 
-const UserQuestion = props => (
+const UserQuestion = props => {
+   
+   
+    return (
     <div>
         <form>
             <div className="form-group">
@@ -14,5 +17,6 @@ const UserQuestion = props => (
         </form>
     </div>
 )
+}
 
 export default UserQuestion;
