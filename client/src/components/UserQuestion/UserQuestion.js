@@ -12,6 +12,6 @@ const UserQuestion = props => (
             <button type="submit" className="btn btn-primary" id="submitButton">SUBMIT</button>
         </form>
     </div>
-);
+)
 
 export default UserQuestion;
