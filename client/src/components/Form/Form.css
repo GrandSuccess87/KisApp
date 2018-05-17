@@ -20,13 +20,12 @@
     background-color: #ED645F;
     border-radius: 2px;
     border-color: white;
-
 }
 
 .btn-primary:hover {
     background-color: #8CCEE4;
-
 }
+
 #submitButton {
     color: white;
 }
@@ -43,10 +42,11 @@
     font-family: 'Open Sans', sans-serif;
     color: #3B3C40;
 }
+
 .btn {
     color: #3B3C40;
-
 }
+
 .card-header {
     background-color: #8CCEE4;
 }

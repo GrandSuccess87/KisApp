@@ -68,12 +68,14 @@ class GoogleLogout extends Component {
       } else if (className && !style) {
         return {}
       }
+
       return initialStyle
     })()
     const defaultStyle = (() => {
       if (disabled) {
         return Object.assign({}, styleProp, disabledStyle)
       }
+
       return styleProp
     })()
     const googleLoginButton = React.createElement(
@@ -86,6 +88,7 @@ class GoogleLogout extends Component {
       },
       children || buttonText
     )
+
     return googleLoginButton
   }
 }
@@ -112,4 +115,4 @@ GoogleLogout.defaultProps = {
   jsSrc: 'https://apis.google.com/js/client:platform.js'
 }
 
-export default GoogleLogout;
+export default GoogleLogout

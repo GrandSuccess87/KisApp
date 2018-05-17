@@ -39,7 +39,6 @@ class Form extends Component {
   };
 
   getResults = () => {
-
     if(this.state.userQuestion){
       axios.post("/api/questions",{
         userQuestion: this.state.userQuestion
@@ -107,6 +106,6 @@ class Form extends Component {
       </div>
     );
   }
-}
+};
 
 export default Form;

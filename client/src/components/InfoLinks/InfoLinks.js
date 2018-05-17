@@ -1,7 +1,6 @@
 import React from "react";
 import "./Resources.css";
 
-
 const Resources = props => (
     <div className="container">
     <div className="row justify-content-md-center">
