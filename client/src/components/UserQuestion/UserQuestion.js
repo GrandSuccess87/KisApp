@@ -1,6 +1,5 @@
-import React from "react"
-import "./UserQuestion.css"
-
+import React from "react";
+import "./UserQuestion.css";
 
 const UserQuestion = props => (
     <div>
@@ -13,6 +12,6 @@ const UserQuestion = props => (
             <button type="submit" className="btn btn-primary" id="submitButton">SUBMIT</button>
         </form>
     </div>
-)
+);
 
 export default UserQuestion;

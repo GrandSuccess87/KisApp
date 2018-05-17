@@ -1,7 +1,7 @@
 import React from "react";
 import "./Logo.css";
-import "./animate.min.css"
-import Logoimg from "./kis.png"
+import "./animate.min.css";
+import Logoimg from "./kis.png";
 
 
 const Logo = props => (
@@ -14,6 +14,5 @@ const Logo = props => (
         </div>
     </div>
 )
-
 
 export default Logo;
