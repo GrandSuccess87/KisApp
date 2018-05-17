@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import Nav from "../../components/Nav";
-import Wrapper from "../../components/Wrapper"
-import Logo from "../../components/Logo"
-import InfoLinks from "../../components/InfoLinks"
+import Wrapper from "../../components/Wrapper";
+import Logo from "../../components/Logo";
+import InfoLinks from "../../components/InfoLinks";
+import Footer from "../../components/Footer";
+
 
 class ResourcesPage extends Component {
 
@@ -14,6 +16,7 @@ class ResourcesPage extends Component {
             <Logo />
             <InfoLinks />
             </Wrapper>
+            <Footer />
            </div>
         );
     }
