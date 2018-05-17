@@ -24,9 +24,9 @@ class Home extends Component {
         return(
            <div>
            <Nav 
-           log={this.state.isLoggedIn}
-           logIn={this.logUserIn}
-           logOut={this.logUserOut}
+            log={this.state.isLoggedIn}
+            logIn={this.logUserIn}
+            logOut={this.logUserOut}
            />
             <Wrapper>
             <Logo />

@@ -9,9 +9,11 @@ const clientId = '73580094877-njrsmo353tvtk1kt4c36mqgfiqumbll5.apps.googleuserco
 
 
 const Nav = props => { 
+  
 
   const success = response => {
     console.log(response)
+    console.log(response.w3.ofa) //Path to get persons logged name
     props.logIn()
   }
   
@@ -44,7 +46,7 @@ const Nav = props => {
         </li>
       </ul>
       {props.log ? 
-              <GoogleLogout buttonText="LOGOUT" onLogoutSuccess={logout}  />
+              <GoogleLogout buttonText={'LOGOUT'} onLogoutSuccess={logout}  />
               : 
               <GoogleLogin
               clientId={clientId}
