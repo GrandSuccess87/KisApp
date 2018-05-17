@@ -30,6 +30,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
+To view our RESTful GET API please run yarn start at the root of the folder directory and visit localhost:3001/topic/type in your topic of interest i.e. consent, sex, sti.  
+
 ## Table of Contents
 
 - [Updating to New Releases](#updating-to-new-releases)
