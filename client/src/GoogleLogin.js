@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { GoogleLogout } from "../src/index";
 
+
 class GoogleLogin extends Component {
   constructor(props) {
     super(props)
@@ -106,6 +107,7 @@ class GoogleLogin extends Component {
       } else {
         auth2.signIn(options).then(res => this.handleSigninSuccess(res), err => onFailure(err))
       }
+
       <GoogleLogout buttonText="Logout" />
 
     }
@@ -143,17 +145,10 @@ class GoogleLogin extends Component {
       display: 'inline-block',
       background: '#F8F9FA',
       color: '#ED645F',
-      width: 190,
-      paddingTop: 10,
-      paddingBottom: 10,
       border: '1px solid transparent',
       fontSize: 15,
       fontWeight: 'bold',
-      fontFamily: 'open sans',
-      float: 'right',
-      height: 92,
-      marginTop: 42,
-
+      fontFamily: 'open sans'
     }
     const styleProp = (() => {
       if (style) {
@@ -234,5 +229,6 @@ GoogleLogin.defaultProps = {
   onRequest: () => {},
   jsSrc: 'https://apis.google.com/js/client:platform.js'
 }
+
 
 export default GoogleLogin

@@ -4,8 +4,6 @@ import Nav from "../../components/Nav";
 import Wrapper from "../../components/Wrapper";
 import Form from "../../components/Form";
 import Footer from "../../components/Footer"
-import GoogleLogin from "../../components/GoogleLogin"
-import GoogleLogOut from "../../components/GoogleLogOut"
 
 
 class Home extends Component {

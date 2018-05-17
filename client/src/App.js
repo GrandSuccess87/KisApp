@@ -15,7 +15,7 @@ const success = response => {
 }
 
 const error = response => {
-  console.log(response);
+  console.error(response);
 }
 
 const loading = () => {
@@ -46,10 +46,8 @@ const App = () => (
       // className='button'
       // style={{ color: 'red' }}
     >
-      <span>LOGIN WITH GOOGLE</span>
-
+      <span>Login with Google</span>
     </GoogleLogin>
-
 
     <GoogleLogout buttonText="Logout" onLogoutSuccess={logout} />
 
