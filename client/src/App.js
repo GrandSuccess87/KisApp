@@ -5,33 +5,33 @@ import About from "./pages/About";
 import ResourcesPage from "./pages/Resources";
 // import GoogleLogin from "react-google-login";
 // import { GoogleLogout } from "react-google-login";
-import { GoogleLogout, GoogleLogin } from "../src/index";
+// import { GoogleLogout, GoogleLogin } from "../src/index";
 
-const clientId = '73580094877-njrsmo353tvtk1kt4c36mqgfiqumbll5.apps.googleusercontent.com'
-// import GoogleLogin, { GoogleLogout } from '../dist/google-login'
+// const clientId = '73580094877-njrsmo353tvtk1kt4c36mqgfiqumbll5.apps.googleusercontent.com'
+// // import GoogleLogin, { GoogleLogout } from '../dist/google-login'
 
-const success = response => {
-  console.log(response)
-}
+// const success = response => {
+//   console.log(response)
+// }
 
-const error = response => {
-  console.error(response);
-}
+// const error = response => {
+//   console.error(response)
+// }
 
-const loading = () => {
-  console.log('loading')
-}
+// const loading = () => {
+//   console.log('loading')
+// }
 
-const logout = () => {
-  console.log('logout')
-}
+// const logout = () => {
+//   console.log('logout')
+// }
 
 
 const App = () => (
   <Router>
 
   <div>
-    <GoogleLogin
+    {/* <GoogleLogin
       clientId={clientId}
       scope="https://www.googleapis.com/auth/analytics"
       onSuccess={success}
@@ -46,10 +46,12 @@ const App = () => (
       // className='button'
       // style={{ color: 'red' }}
     >
-      <span>Login with Google</span>
-    </GoogleLogin>
+      <span>LOGIN WITH GOOGLE</span>
 
-    <GoogleLogout buttonText="Logout" onLogoutSuccess={logout} />
+    </GoogleLogin> */}
+
+
+    {/* <GoogleLogout buttonText="Logout" onLogoutSuccess={logout} /> */}
 
 
     <Switch>

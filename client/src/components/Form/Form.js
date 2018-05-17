@@ -57,8 +57,12 @@ class Form extends Component {
     } else {
         this.setState({validationMessage: true})
     }
-
   };
+
+  scrollIntoView = () => {
+    var elmnt = document.getElementById("headingThree");
+    elmnt.scrollIntoView();
+  }
 
   render() {
 
@@ -96,7 +100,10 @@ class Form extends Component {
             </form>
           </div>
           <div>
-            <UserResults results={this.state.searchResults}/>
+            <UserResults 
+            results={this.state.searchResults}
+            scrolling={this.scrollIntoView}
+            />
           </div>
         </div>
       </div>

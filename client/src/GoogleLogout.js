@@ -50,17 +50,12 @@ class GoogleLogout extends Component {
     const disabled = this.state.disabled || this.props.disabled
     const initialStyle = {
       display: 'inline-block',
-      background: '#ED645F',
-      color: '#fff',
-      width: 190,
-      paddingTop: 10,
-      paddingBottom: 10,
-      borderRadius: 2,
+      background: '#F8F9FA',
+      color: '#ED645F',
       border: '1px solid transparent',
-      fontSize: 14, 
+      fontSize: 15,
       fontWeight: 'bold',
-      fontFamily: 'Open Sans',
-      marginLeft: 20,
+      fontFamily: 'open sans'
     }
     const styleProp = (() => {
       if (style) {

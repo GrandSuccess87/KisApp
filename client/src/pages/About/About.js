@@ -3,6 +3,8 @@ import Nav from "../../components/Nav";
 import Wrapper from "../../components/Wrapper"
 import Logo from "../../components/Logo"
 import AboutComp from "../../components/About"
+import Footer from "../../components/Footer"
+
 
 class About extends Component {
     render() {
@@ -13,6 +15,7 @@ class About extends Component {
             <Logo />
             <AboutComp />
             </Wrapper>
+            <Footer />
            </div>
         );
     }

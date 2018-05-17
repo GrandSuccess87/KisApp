@@ -7,10 +7,6 @@ import Footer from "../../components/Footer"
 
 
 class Home extends Component {
-    state = {
-        questions: [],
-        userInput: ""
-    };
 
     render() {
         return(
