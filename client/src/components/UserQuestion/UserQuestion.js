@@ -1,11 +1,7 @@
-import React from "react"
-import "./UserQuestion.css"
+import React from "react";
+import "./UserQuestion.css";
 
-
-const UserQuestion = props => {
-   
-   
-    return (
+const UserQuestion = props => (
     <div>
         <form>
             <div className="form-group">
@@ -17,6 +13,5 @@ const UserQuestion = props => {
         </form>
     </div>
 )
-}
 
 export default UserQuestion;

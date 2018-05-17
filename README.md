@@ -7,18 +7,20 @@ At K.I.S., we believe all young people should have the information they need to 
 Technologies: 
 MongoDB
 MongooseORM
+Algolia search engine 
 
 
 Libraries: 
 React.js
-InstantSearch.js
+React Google Sign In
+React Google Sign Out
 
 Frameworks: 
 Express.js
 Node.js (Backend Framework)
-JQuery
 
-Original GitHub Source Code: https://github.com/edominici/knowledge-is-sexy
+Original GitHub Source Code: https://github.com/edominici/knowledge-is-sexy<br>
+React Google authentication/authorization source code can be found [here](anthonyjgrove/react-google-login)
 
 KisApp can be viewed live [here](https://kis-app.herokuapp.com/).
 
@@ -27,6 +29,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+
+To view our RESTful GET API please run yarn start at the root of the folder directory and visit localhost:3001/topic/type in your topic of interest i.e. consent, sex, sti.  
 
 ## Table of Contents
 

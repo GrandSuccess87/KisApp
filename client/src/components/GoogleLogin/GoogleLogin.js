@@ -94,13 +94,13 @@ class GoogleLogin extends Component {
       const { onSuccess, onRequest, onFailure, prompt, responseType } = this.props
       const options = {
         prompt
-      }
-      onRequest()
-      if (responseType === 'code') {
-        auth2.grantOfflineAccess(options).then(res => onSuccess(res), err => onFailure(err))
-      } else {
-        auth2.signIn(options).then(res => this.handleSigninSuccess(res), err => onFailure(err))
-      }
+    }
+    onRequest()
+    if (responseType === 'code') {
+      auth2.grantOfflineAccess(options).then(res => onSuccess(res), err => onFailure(err))
+    } else {
+      auth2.signIn(options).then(res => this.handleSigninSuccess(res), err => onFailure(err))
+    }
     }
   }
   handleSigninSuccess(res) {

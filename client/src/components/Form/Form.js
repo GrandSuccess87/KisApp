@@ -74,7 +74,6 @@ class Form extends Component {
 
 
   render() {
-
     return (
       <div className="row justify-content-md-center">
         <div className="col-md-auto">
@@ -83,7 +82,6 @@ class Form extends Component {
             <form>
               <div className="form-group">
               <p className="askQuestion"> Ask any sex or sexual health questions here.</p>
-
                 <input
                     id="search-input"
                     className={this.state.validationMessage ? "form-control border-danger" : "form-control"}

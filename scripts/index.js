@@ -1,7 +1,7 @@
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var appId = 'YZR8H8JEYA';
-var apiKey = '8b1f7ac15d2dec622d1c39583ad47142';
+var appId = process.env.APPLICATION_ID;
+var apiKey = process.env.ADMIN_API_KEY;
 var indexName = 'questions';
 
 var client = algoliasearch(appId, apiKey);

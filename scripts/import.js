@@ -1,11 +1,11 @@
 require("dotenv").config();
 const mongoose = require('mongoose');
-//const keys = require('./keys.js');
+const keys = require('./keys.js');
 const db = require("../models");
 const algoliasearch = require('algoliasearch');
 const router = require('express').Router();
 
-var client = algoliasearch('QVNOD82220', '758f01b94805f53bec084e460796f7a6');
+var client = algoliasearch(keys.algoliaKeys.APPLICATION_ID, keys.algoliaKeys.ADMIN_API_KEY);
 var index = client.initIndex('questions');
 var questionsJSON = require('./questions.json');
 const questionsController = require('../controllers/questionsController');

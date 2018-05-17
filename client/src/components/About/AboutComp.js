@@ -57,8 +57,8 @@ const AboutComp = props => (
                 </div>
             </div>
         </div>
-        </div>
-        </div>
-        );
+    </div>
+    </div>
+);
 
 export default AboutComp;
