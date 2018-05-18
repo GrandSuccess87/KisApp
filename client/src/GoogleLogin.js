@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { GoogleLogout } from "../src/index";
+import { GoogleLogout } from "../src/index"
 
 
 class GoogleLogin extends Component {
