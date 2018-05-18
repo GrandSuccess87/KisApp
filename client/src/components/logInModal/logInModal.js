@@ -7,10 +7,11 @@ const Modal = props => (
     <div className="modal-dialog modal-sm">
         <div className="modal-content">
             <div className="modal-header">
-                <h4 className="modal-title">Please Log in before starting you're search!</h4>
+                <h4 className="modal-title">PLEASE LOG IN BEFORE <br></br>
+                 STARTING YOUR SEARCH</h4>
                 <hr></hr>
                 <p className="modal-text">
-                    You must be logged in to search!</p>
+                    Thank you for visiting Knowledge is Sexy.</p>
             </div>
             <div className="modal-footer">
                 <button type="button" className="btn btn-secondary modal-button" id="modalButton" data-dismiss="modal">GOT IT</button>
