@@ -3,7 +3,8 @@ import "./AboutComp.css";
 import Erica from "./erica.jpg";
 import Quintessa from "./quintessa.jpg";
 import Ozzy from "./ozzy.jpg";
-import Sarah from "./sarah.jpg"
+import Sarah from "./sarah.jpg";
+import Erin from "./erin.jpg";
 
 const AboutComp = props => (
     <div className="container">
@@ -43,6 +44,14 @@ const AboutComp = props => (
                                 <h5 className="card-title">OZZY CARDENAS</h5>
                                 <img className="card-img-top" src={Ozzy} alt="ozzy cardenas"></img>
                                 <p className="card-text">Ozzy is a Web Developer after a spending many years working for Apple. He is passionate about making connections with people and working with a team. Ozzy enjoys User Design and technical proficiency.</p>
+                            </div>
+                        </div>
+
+                        <div className="card about-card">
+                            <div className="card-body">
+                                <h5 className="card-title">ERIN DOMINICI</h5>
+                                <img className="card-img-top" src={Erin} alt="erin dominici"></img>
+                                <p className="card-text"> Originally from Dallas, Erin is the Founder of Knowldege is Sexy. She came to us with this idea and a lot of research and our team brought her vision to life.</p>
                             </div>
                         </div>
 
