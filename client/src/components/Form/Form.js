@@ -16,15 +16,9 @@ class Form extends Component {
   
   // prints state to console for testing
   componentDidUpdate(){
-    console.log(this.state);
-    console.log("props: " + this.props.log);
+    // Use console.log to see states through app
+    // console.log(this.state);
   }
-
-  // constructor(props) {
-  //   super(props);
-  //   console.log("props: " + JSON.stringify(props))
-  //   console.log("props: " + props.log)
-  // }
 
   handleInputChange = event => {
     // Getting the value and name of the input which triggered the change

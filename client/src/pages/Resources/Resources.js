@@ -9,7 +9,8 @@ import Footer from "../../components/Footer";
 class ResourcesPage extends Component {
 
     state = {
-        isLoggedIn: false
+        isLoggedIn: false,
+        loggedInAs: ""
         };
 
     logUserIn = () => {
@@ -20,6 +21,10 @@ class ResourcesPage extends Component {
         this.setState({isLoggedIn:false})
     };
 
+    setName = (name) => {
+        this.setState({loggedInAs:name})
+    }
+
     render() {
         return(
            <div>
@@ -27,6 +32,8 @@ class ResourcesPage extends Component {
             log={this.state.isLoggedIn}
             logIn={this.logUserIn}
             logOut={this.logUserOut}
+            logName={this.state.loggedInAs}
+            setName={this.setName}
            />
             <Wrapper>
             <Logo />
