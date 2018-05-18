@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+<<<<<<< HEAD
 import { GoogleLogout } from "../src/index"
+=======
+// import { GoogleLogout } from "../src/index";
+>>>>>>> 8870437388fcf5dfddcf4601a90e1626a711e0d5
 
 
 class GoogleLogin extends Component {
@@ -108,7 +112,7 @@ class GoogleLogin extends Component {
         auth2.signIn(options).then(res => this.handleSigninSuccess(res), err => onFailure(err))
       }
 
-      <GoogleLogout buttonText="Logout" />
+      // <GoogleLogout buttonText="Logout" />
 
     }
   }

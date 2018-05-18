@@ -2,7 +2,7 @@ import React from "react";
 import "./UserResults.css";
 
 const UserResults = props => { 
-  console.log(props);
+  // console.log(props);
 
   if(props.results.length > 0){
     return (
