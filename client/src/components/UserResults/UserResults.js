@@ -2,7 +2,6 @@ import React from "react";
 import "./UserResults.css";
 
 const UserResults = props => { 
-  // console.log(props);
   if (props.results.length ===1) {
     return (
       <div className = "container" id="answer-container">
