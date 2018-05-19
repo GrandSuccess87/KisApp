@@ -13,7 +13,7 @@ const Nav = props => {
 
   const success = response => {
     // console.log(response)
-    // console.log(response.w3.ofa) //Path to get persons logged name
+    console.log(response.w3.ofa) //Path to get persons logged name
     props.logIn()
     props.setName(response.w3.ofa)
   }

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import UserResults from "../../components/UserResults";
 import axios from "axios";
 import Modal from "../../components/Modal";
+import LogInModal from "../../components/logInModal";
 import "./Form.css";
 
 class Form extends Component {
@@ -40,7 +41,7 @@ class Form extends Component {
   };
 
   getResults = () => {
-    if(this.state.userQuestion){
+    if(this.state.userQuestion && this.props.log){
       axios.post("/api/questions",{
         userQuestion: this.state.userQuestion
       }).then(res => {
@@ -54,6 +55,8 @@ class Form extends Component {
         }
       })
       .catch(err => console.log(err));
+    } else if(this.props.log === false) {
+      
     } else {
         this.setState({validationMessage: true})
     }
@@ -72,6 +75,7 @@ class Form extends Component {
         <div className="col-md-auto">
           <div>
           <Modal/>
+          <LogInModal/>
             <form>
               <div className="form-group">
               <p className="askQuestion"> Ask any sex or sexual health questions here.</p>
@@ -85,7 +89,7 @@ class Form extends Component {
                     placeholder="ask here!"/>
                     {this.state.validationMessage ?
                     <p className="text-danger">Make sure to ask a question silly!</p> : null}
-                <button className="btn btn-primary mt-3" id="submitButton" onClick={this.handleFormSubmit}>SUBMIT</button>
+                {this.props.log ? <button className="btn btn-primary mt-3" id="submitButton" onClick={this.handleFormSubmit}>SUBMIT</button>: <button className="btn btn-primary mt-3" id="submitButton" data-toggle="modal" data-target="#logInModal-window" type="button">SUBMIT</button>}
                 <br/>
                 <br/>
                 {this.state.returnedResults === 0
