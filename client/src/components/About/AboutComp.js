@@ -19,14 +19,17 @@ const AboutComp = props => (
                     <div className="col-lg-6" id="contentDiv">
                         <hr className="bottomRule"></hr>
                         <p className="aboutText" id = "about-text">
-                            At K.I.S., we believe all young people should have the information they need to make healthy decisions in their own lives. With the help of health educators and programmers alike, so we built a tool to help young people do exactly that. K.I.S is a platform to encourage curiosity, learning, and health with an inclusive and easy-to-navigate environment. With a simple search, users are able to find quick and reliable answers to any sexual health question and can get connected to resources to help them make healthy decisions about their own sexual health. All answers and information at K.I.S. are answered, researched, and verified by public health experts and sexual health educators.</p>
+                        With a simple search, users are able to find quick and reliable answers to any sexual health question and can get connected to resources to help them make healthy decisions about their own sexual health. All answers and information at K.I.S. are answered, researched, and verified by public health experts and sexual health educators.
+                        </p>
+                        <p className="aboutText" id = "about-text">
+                            At K.I.S., we believe all young people should have the information they need to make healthy decisions in their own lives. With the help of health educators and programmers alike, we built a tool to help young people do exactly that. K.I.S is a platform to encourage curiosity, learning, and health with an inclusive and easy-to-navigate environment.</p>
                         <hr className="bottomRule"></hr>
 
                         <div className="card about-card" >
                             <div className="card-body">
                                 <h5 className="card-title">QUINTESSA ANDERSON</h5>
                                 <img className="card-img-top" src={Quintessa} alt="quintessa anderson"></img>
-                                <p className="card-text">Quintessa is a Summa Cum Laude graduate from Rush University demonstrating commitment to excellence, competence, and character. she has a strong passion for setting high goals.
+                                <p className="card-text">Quintessa is a Summa Cum Laude graduate from Rush University demonstrating commitment to excellence, competence, and character. She has a strong passion for building sophisticated and dynamic Full-Stack Web Applications.
                                 </p>
                             </div>
                         </div>
@@ -43,7 +46,7 @@ const AboutComp = props => (
                             <div className="card-body">
                                 <h5 className="card-title">OZZY CARDENAS</h5>
                                 <img className="card-img-top" src={Ozzy} alt="ozzy cardenas"></img>
-                                <p className="card-text">Ozzy is a Web Developer after a spending many years working for Apple. He is passionate about making connections with people and working with a team. Ozzy enjoys User Design and technical proficiency.</p>
+                                <p className="card-text">Ozzy is a Web Developer after spending many years working for Apple. He is passionate about making connections with people and working with a team. Ozzy enjoys User Design and technical proficiency.</p>
                             </div>
                         </div>
 
