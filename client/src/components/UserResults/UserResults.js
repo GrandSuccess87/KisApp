@@ -31,7 +31,36 @@ const UserResults = props => {
       </div>
       </div>
     )
-  }else if (props.results.length > 0) {
+  } else if (props.results.length ===2) {
+      return (
+        <div className = "container" id="answer-container">
+        <div className="row justify-content-lg-center">
+          <div className="col-lg-12" id="contentDiv">
+            <div className="accordion" id="accordion">          
+              <div className="card">
+                <div className="card-header" id="headingOne">
+                  <h5 className="mb-0">
+                    <button 
+                    id="button-text"
+                    className="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      {props.results[0].question}
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div 
+                  id="card-body-styling"
+                  className="card-body">
+                  {props.results[0].answer}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      )
+  } else if (props.results.length > 0) {
     return (
       <div className = "container" id="answer-container">
       <div className="row justify-content-lg-center">
