@@ -4,11 +4,11 @@
 }
 
 h4  {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 300;
-        font-size:24px;
-        text-align: center;
-        color:#ED645F;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size:24px;
+    text-align: center;
+    color:#ED645F;
 }
 
 .modal-header {
@@ -50,5 +50,5 @@ h4  {
 
 .modal-content {
     margin-top: 200px;
-    width: 450px;
+    width: 130%;
 }

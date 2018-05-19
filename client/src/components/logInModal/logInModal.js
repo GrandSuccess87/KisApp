@@ -3,7 +3,7 @@ import "./logInModal.css";
 
 const Modal = props => (
 <div className = "container">
-<div className="modal fade bd-example-modal-sm" tabIndex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="logInModal-window">
+<div className="modal fade bd-example-modal-sm " tabIndex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="logInModal-window">
     <div className="modal-dialog modal-sm">
         <div className="modal-content">
             <div className="modal-header">

@@ -16,7 +16,7 @@ const AboutComp = props => (
             </div>
             <div className="container">
                 <div className="row justify-content-lg-center">
-                    <div className="col-lg-6" id="contentDiv">
+                    <div className="col-lg-6" id="">
                         <hr className="bottomRule"></hr>
                         <p className="aboutText" id = "about-text">
                         With a simple search, users are able to find quick and reliable answers to any sexual health question and can get connected to resources to help them make healthy decisions about their own sexual health. All answers and information at K.I.S. are answered, researched, and verified by public health experts and sexual health educators.
