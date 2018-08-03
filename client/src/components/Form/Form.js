@@ -13,7 +13,7 @@ class Form extends Component {
   validationMessage: false,
   returnedResults: 1
   };
-  
+
   // prints state to console for testing
   componentDidUpdate(){
     console.log(this.state);
@@ -56,7 +56,7 @@ class Form extends Component {
       })
       .catch(err => console.log(err));
     } else if(this.props.log === false) {
-      
+
     } else {
         this.setState({validationMessage: true})
     }
@@ -78,7 +78,7 @@ class Form extends Component {
           <LogInModal/>
             <form>
               <div className="form-group">
-              <p className="askQuestion"> Ask any sex or sexual health questions here.</p>
+              <p className="askQuestion"> Please Login so that you may ask any sex or sexual health questions here.</p>
                 <input
                     id="search-input"
                     className={this.state.validationMessage ? "form-control border-danger" : "form-control"}
@@ -104,7 +104,7 @@ class Form extends Component {
             </form>
           </div>
           <div>
-            <UserResults 
+            <UserResults
             results={this.state.searchResults}
             scrolling={this.scrollIntoView}
             />
